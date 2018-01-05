@@ -1,3 +1,5 @@
+/// @description Execute callback script
+
 if (pressed) {
  pressed = 0;
  if (zui_get_hover()) {
@@ -5,4 +7,3 @@ if (pressed) {
    script_execute(callback, id);
  }
 }
-

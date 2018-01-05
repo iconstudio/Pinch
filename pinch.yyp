@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "67312436-fe26-4e3a-8340-1a33e31143a7",
+            "Value": {
+                "id": "f3a15c11-e89e-4b82-a27f-d27d3dba211e",
+                "resourcePath": "scripts\\menu_callback_option\\menu_callback_option.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "680c8ded-aca1-4108-aa9b-ba707cf6ee79",
             "Value": {
                 "id": "778342e7-ade5-4f2a-b8e4-621ded38160b",
@@ -1263,6 +1271,14 @@
             }
         },
         {
+            "Key": "f1334b7a-ab8c-417c-93fc-8ffd72ae6eb2",
+            "Value": {
+                "id": "26ce48fa-a3e7-4b11-87e2-0f6d5d5fc3de",
+                "resourcePath": "scripts\\menu_callback_achievement\\menu_callback_achievement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "70b39bc4-2f33-4b6e-9916-b48ea6a714b5",
@@ -1335,6 +1351,14 @@
             }
         },
         {
+            "Key": "f8e43b87-ad56-4682-8483-d99f7f79512a",
+            "Value": {
+                "id": "63240521-cfc5-4937-8e76-01db77f5954c",
+                "resourcePath": "scripts\\menu_callback_log\\menu_callback_log.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f9ccdc67-3c0d-4fe1-abd9-1620f5e7220f",
             "Value": {
                 "id": "231825d6-3e5d-4370-9df4-9b9e1f6dab04",
@@ -1363,6 +1387,14 @@
             "Value": {
                 "id": "078ca766-9bd8-4635-b892-931c3573d686",
                 "resourcePath": "scripts\\@d3d_transform_add_translation\\d3d_transform_add_translation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ffeacf47-da27-4cf1-8582-b00570c7f460",
+            "Value": {
+                "id": "77ee4da9-0cb0-434c-8ecf-b3df5f9f4864",
+                "resourcePath": "scripts\\menu_callback_start\\menu_callback_start.yy",
                 "resourceType": "GMScript"
             }
         }
@@ -1439,9 +1471,13 @@
         "374ca2fa-b061-4a07-b4e6-03b63caa156c",
         "acff1914-80f8-47c4-bde6-184cbb0a2490",
         "fc95de7b-baa0-451b-90b0-0272d7f7e1de",
-        "5948aa1e-fbed-4987-a614-274fb4c1fc6f",
+        "ffeacf47-da27-4cf1-8582-b00570c7f460",
+        "f1334b7a-ab8c-417c-93fc-8ffd72ae6eb2",
+        "f8e43b87-ad56-4682-8483-d99f7f79512a",
+        "67312436-fe26-4e3a-8340-1a33e31143a7",
         "c614f8e7-0b23-411c-a2c8-9044ee9d6e68",
         "e8d7bf9b-b1c6-45f7-81da-cfe5ca725c27",
+        "5948aa1e-fbed-4987-a614-274fb4c1fc6f",
         "a4c60548-e6ce-4a69-a06d-bac19c587919"
     ],
     "tutorial": ""
