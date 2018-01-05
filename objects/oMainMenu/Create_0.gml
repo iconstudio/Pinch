@@ -9,7 +9,7 @@ zui_set_size(800, 400)
 var zw = zui_get_width()
 var zh = zui_get_height()
 
-menu_first = zui_create(400, 100, oMainMenuNode)
+menu_first = menu_node_add()
 menu_focus = menu_first
 menu_prefocus = noone
 menu_preprefocus = noone
@@ -23,25 +23,23 @@ with (menu_first) {
 	menu_button_add("Log", -1)
 	menu_button_add("Option", -1)
 	menu_button_add("Exit game", menu_callback_exit)
+}
+
+menu_start = menu_node_add()
+with (menu_start) {
+	menu_button_add("Artifact 1 - ", -1)
+	menu_button_add("Back", menu_callback_back)
+}
 	
-	var node = menu_node_add()
-	with (node) {
-		menu_button_add("Artifact 1 - ", -1)
-		menu_button_add("Back", menu_callback_back)
-	}
-	other.menu_start = node
+menu_option = menu_node_add()
+with (menu_option) {
+	menu_button_add("Sound Volume", -1)
+	menu_button_add("Music Volume", -1)
+	menu_button_add("Back", menu_callback_back)
+}
 	
-	var node = menu_node_add()
-	with (node) {
-		menu_button_add("Artifact 1 - ", -1)
-		menu_button_add("Back", menu_callback_back)
-	}
-	other.menu_option = node
-	
-	node = menu_node_add()
-	with (node) {
-		menu_button_add("Yes", -1)
-		menu_button_add("No", menu_callback_back)
-	}
-	other.menu_exit = node
+menu_exit = menu_node_add()
+with (menu_exit) {
+	menu_button_add("Yes", menu_callback_end)
+	menu_button_add("No", menu_callback_back)
 }
