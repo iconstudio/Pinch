@@ -19,5 +19,6 @@ with (button_id) {
 }
 
 menu_lasty += ay
+ds_list_add(button_list, button_id)
 
 return button_id

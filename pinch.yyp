@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "43f4a055-8fa8-4966-98da-1a4ceb4e18e0",
+            "Value": {
+                "id": "901ac442-c6ff-4782-a440-02d4a52aa2e7",
+                "resourcePath": "rooms\\roomGame1\\roomGame1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "47a609cf-e155-4acd-9be8-beefae1d1d3e",
             "Value": {
                 "id": "5478617f-9453-4759-9f5e-ffda63c8c364",
@@ -804,6 +812,14 @@
                 "id": "5740a181-3253-4a7f-958f-2008ca1e6b14",
                 "resourcePath": "scripts\\zui_set_anchor\\zui_set_anchor.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a87f0c2c-6323-446e-81d7-483736152985",
+            "Value": {
+                "id": "70f567a1-9609-4065-8e07-99c6a683e9f9",
+                "resourcePath": "sprites\\sTemp\\sTemp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

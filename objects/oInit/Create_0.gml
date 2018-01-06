@@ -6,19 +6,20 @@ global.__layer_dict = ds_map_create()
 #macro zui_layer
 
 zui_main()
-application_surface_draw_enable(false);
+application_surface_draw_enable(false)
+/*
 layer_force_draw_depth(true, 0)
 
 global.Camera = camera_create()
 camera_set_proj_mat(global.Camera, matrix_build_identity())
-camera_apply(global.Camera)
 camera_set_view_target(global.Camera, oPlayer)
+camera_set_view_size(global.Camera, 800, 400)
 
 for (var i = room_first; room_exists(i); i = room_next(i)) {
 	room_set_view_enabled(i, 0)
 	room_set_camera(i, 0, global.Camera)
 }
-
+*/
 global.Gamepad = -1
 global.GamepadType = 0
 global.GamepadSprite = array_create(3, sIconControllerXbox, sIconControllerPlayStation, sIconControllerOther)
