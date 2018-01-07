@@ -1,8 +1,8 @@
 {
-    "id": "7c0b04d9-0b62-4ea6-b4c5-753b1fe5ae74",
+    "id": "711f18b8-057d-483f-b19a-5995fb13cea1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oStatic20",
+    "name": "oStatic20NoSpawn",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": true,
-    "spriteId": "48364cb1-b65b-4326-b3c2-b58068bdbe16",
+    "spriteId": "3ddf9359-1901-4d01-a0a8-729c3a8c4922",
     "visible": false
 }

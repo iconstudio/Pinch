@@ -378,7 +378,7 @@
             "Key": "3ddf9359-1901-4d01-a0a8-729c3a8c4922",
             "Value": {
                 "id": "7df3ba6a-17c7-458c-aff6-a46eebcb11d7",
-                "resourcePath": "sprites\\sStatic20\\sStatic20.yy",
+                "resourcePath": "sprites\\sStatic20NoSpawn\\sStatic20NoSpawn.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -428,6 +428,14 @@
                 "id": "5478617f-9453-4759-9f5e-ffda63c8c364",
                 "resourcePath": "objects\\oUIWindow\\oUIWindow.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "48364cb1-b65b-4326-b3c2-b58068bdbe16",
+            "Value": {
+                "id": "cc0de95e-87aa-44b3-986b-223a9a9cdec8",
+                "resourcePath": "sprites\\sStatic20\\sStatic20.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -636,6 +644,14 @@
                 "id": "87bc2a8c-8f62-491e-b3d9-cae01d126d82",
                 "resourcePath": "sprites\\sIconControllerXbox\\sIconControllerXbox.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "711f18b8-057d-483f-b19a-5995fb13cea1",
+            "Value": {
+                "id": "37364c4a-073b-407f-8ee6-24abe68d1bb0",
+                "resourcePath": "objects\\oStatic20NoSpawn\\oStatic20NoSpawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
