@@ -23,7 +23,7 @@ if yVel < 0
 else
 	cy = y + yVel + 1
 	
-if place_free(x, cy) {
+if place_free(x, cy) and !collision_line(x, y, x, cy, oSolid, false, true) {
 	y += yVel
 	yVel += yGravity
 	onAir = true

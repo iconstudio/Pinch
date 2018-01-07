@@ -31,12 +31,12 @@ if !onAir and io_check_pressed_jump() { // do jump
 	jumped = true
 } else { // while not jumping
 	if onAir {
-		if io_check_pressed_down() {
+		if yVel > 0 and io_check_pressed_down() {
 			if stomp_count > 0 { // double pressed
 				stomp_count = 0
-				yVel = yVelMax
+				yVel = max(yVel, yVelMax / 2)
 			} else {
-				stomp_count = 3
+				stomp_count = 5
 			}
 		}
 	}
