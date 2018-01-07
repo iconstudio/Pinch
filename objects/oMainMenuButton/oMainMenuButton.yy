@@ -129,6 +129,20 @@
             "value": "noone",
             "varName": "next",
             "varType": 5
+        },
+        {
+            "id": "7273ba0d-b529-4d88-bb48-e8f231cbd882",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "before",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -20,9 +20,12 @@ with (button_id) {
 	
 	if nsz > 0 {
 		next = other.button_list[| 0]
-		other.button_list[| nsz - 1].next = id
+		before = other.button_list[| nsz - 1]
+		
+		before.next = id
 	} else {
-		next = id	
+		next = id
+		before = id
 	}
 }
 
