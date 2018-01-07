@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "914c3918-6f06-41be-9195-b92915d0ad42",
+            "Value": {
+                "id": "ba08e93a-ce25-4a82-b19e-b6dceca19e12",
+                "resourcePath": "sprites\\sPlayerBarrier\\sPlayerBarrier.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93d6a579-80ca-437b-a2f5-94831c6e0eb4",
             "Value": {
                 "id": "ff723f70-60cb-4cff-a272-af9a34789dd4",
