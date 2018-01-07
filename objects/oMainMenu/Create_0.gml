@@ -24,7 +24,7 @@ with (menu_first) {
 
 menu_start = menu_node_add()
 with (menu_start) {
-	button_focus = menu_button_add("Artifact 1 - ", -1)
+	button_focus = menu_button_add("Stage Begin", menu_callback_gamebegin)
 	menu_button_add("Back", menu_callback_back, true)
 }
 

@@ -24,11 +24,22 @@ if jumped and jump_count < jump_count_max {
 	jumped = false
 }
 
-if !onAir and io_check_pressed_jump() {
+if !onAir and io_check_pressed_jump() { // do jump
 	yVel = -12 // flash jump
 	
 	jump_count = 0
 	jumped = true
+} else { // while not jumping
+	if onAir {
+		if io_check_pressed_down() {
+			if stomp_count > 0 { // double pressed
+				stomp_count = 0
+				yVel = yVelMax
+			} else {
+				stomp_count = 3
+			}
+		}
+	}
 }
 
 if jumped and io_check_released_jump() {
@@ -36,5 +47,8 @@ if jumped and io_check_released_jump() {
 	jumped = false
 	yVel /= 2
 }
+
+if stomp_count > 0
+	stomp_count--
 
 event_inherited()

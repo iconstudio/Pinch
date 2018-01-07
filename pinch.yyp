@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "3855679f-6d02-4a7d-a2d9-30ebc4522260",
+            "Value": {
+                "id": "1f34128a-b4ea-4ea1-9111-7f35ad5e013d",
+                "resourcePath": "scripts\\menu_callback_gamebegin\\menu_callback_gamebegin.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3c116e5a-4839-4467-bd09-b441b2bc43c9",
             "Value": {
                 "id": "1631670b-6d6f-4f42-b250-dde6f51a929c",
@@ -1606,6 +1614,7 @@
         "f8e43b87-ad56-4682-8483-d99f7f79512a",
         "67312436-fe26-4e3a-8340-1a33e31143a7",
         "c614f8e7-0b23-411c-a2c8-9044ee9d6e68",
+        "3855679f-6d02-4a7d-a2d9-30ebc4522260",
         "e8d7bf9b-b1c6-45f7-81da-cfe5ca725c27",
         "5948aa1e-fbed-4987-a614-274fb4c1fc6f",
         "a4c60548-e6ce-4a69-a06d-bac19c587919"

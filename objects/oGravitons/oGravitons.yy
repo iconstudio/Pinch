@@ -211,7 +211,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "16",
+            "value": "30",
             "varName": "yVelMax",
             "varType": 0
         },

@@ -3,9 +3,9 @@
 if !__parent.__visible
 	return;
 
-if mouse_check_button_pressed(mb_left) or (io_check_pressed_jump() and __parent.__visible and __parent.button_focus == id) {
-	if zui_get_hover()
-		pressed = true
+if (zui_get_hover() and mouse_check_button_pressed(mb_left))
+or (io_check_pressed_jump() and __parent.__visible and __parent.button_focus == id) {
+	pressed = true
 }
 
 if mouse_check_button_released(mb_left) or io_check_released_jump() {
@@ -19,7 +19,7 @@ if mouse_check_button_released(mb_left) or io_check_released_jump() {
 	}
 }
 
-if zui_get_hover() || __parent.button_focus == id {
+if zui_get_hover() or __parent.button_focus == id {
 	__parent.button_focus = id
 	if hpush < 1
 		hpush += hpush * 0.2 + 0.1
