@@ -1,9 +1,22 @@
 /// @description hovering
 
-if __parent.button_focus == id and io_check_released_jump() {
-	pressed = true
-	__hover = true
-	event_perform(ev_mouse, ev_global_left_release)
+if !__parent.__visible
+	return;
+
+if mouse_check_button_pressed(mb_left) or (io_check_pressed_jump() and __parent.__visible and __parent.button_focus == id) {
+	if zui_get_hover()
+		pressed = true
+}
+
+if mouse_check_button_released(mb_left) or io_check_released_jump() {
+	if (pressed) {
+		pressed = false
+		if (callback >= 0) {
+			with oMainMenu
+				menu_title = other.caption
+			script_execute(callback, id)
+		}
+	}
 }
 
 if zui_get_hover() || __parent.button_focus == id {
