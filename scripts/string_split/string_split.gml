@@ -6,7 +6,7 @@
 // string_split("cat,dog,two word", ",") = "cat", "dog", "two word"
 // string_split("foo, poo, hoo ", ",") = "foo", "poo", "hoo "
 
-if string_count(_sep, _str) <= 0
+if string_count(argument1, argument0) <= 0
 	return array_create(1, 0) // 1-sized array contains only 'zero'
 
 var count = 0;
