@@ -40,7 +40,7 @@ if !onAir and io_check_pressed_jump() { // do Jump
 			}
 		}
 	} else {
-		if io_check_pressed_down() { // do Getting Shield
+		if mx == 0 and io_check_pressed_down() { // do Getting Shield
 			shielding = true
 			shield_count = shield_count_max
 		}

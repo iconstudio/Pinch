@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "9e711601-82a9-4818-bf4f-d6d7fca09a39",
+            "Value": {
+                "id": "882d0532-df5f-47f2-be71-91c5ab9797d1",
+                "resourcePath": "scripts\\player_id\\player_id.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e89ac35-279a-465e-ba2f-088d062b2760",
             "Value": {
                 "id": "57b643fa-907e-45af-a9ce-981f9ef49e22",
@@ -964,6 +972,14 @@
                 "id": "24d5085d-5cae-48e5-bb22-6522fd3e7120",
                 "resourcePath": "scripts\\menu_button_add\\menu_button_add.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ad1fa7e5-adf3-4ac3-a650-b697cb559864",
+            "Value": {
+                "id": "51dae341-d490-46a3-830c-ac6326408233",
+                "resourcePath": "views\\ad1fa7e5-adf3-4ac3-a650-b697cb559864.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1188,6 +1204,14 @@
                 "id": "bfab08bd-c46f-4a09-8727-12c5048728f6",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd13ace5-c7fd-45fc-bd9c-d6e4a18ebd37",
+            "Value": {
+                "id": "b4ff0df8-3274-4a0a-b52c-ced754bba38a",
+                "resourcePath": "scripts\\player_id_set\\player_id_set.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1625,7 +1649,9 @@
         "3855679f-6d02-4a7d-a2d9-30ebc4522260",
         "e8d7bf9b-b1c6-45f7-81da-cfe5ca725c27",
         "5948aa1e-fbed-4987-a614-274fb4c1fc6f",
-        "a4c60548-e6ce-4a69-a06d-bac19c587919"
+        "a4c60548-e6ce-4a69-a06d-bac19c587919",
+        "9e711601-82a9-4818-bf4f-d6d7fca09a39",
+        "cd13ace5-c7fd-45fc-bd9c-d6e4a18ebd37"
     ],
     "tutorial": ""
 }

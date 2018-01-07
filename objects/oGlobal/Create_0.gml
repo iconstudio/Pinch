@@ -1,5 +1,7 @@
 /// @description Game variables
 
+global.my_player = noone
+
 callto = noone
 construct = array_create(3, noone, "", "")
 notification_list = ds_list_create()
