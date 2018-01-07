@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0caa410b-3109-4dd5-b7c7-4c7b0607013a",
+            "Value": {
+                "id": "6aec91d5-29b4-4044-bec7-75fda15ae1c4",
+                "resourcePath": "tilesets\\tilesetDirtShade\\tilesetDirtShade.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "0fb14fd4-0d03-455b-a32f-569011e5820d",
             "Value": {
                 "id": "493c8d32-be31-43ec-b069-6d411d0fc4d7",
@@ -108,6 +116,14 @@
                 "id": "13956a9e-ab1f-4a13-a840-e302b3adf01a",
                 "resourcePath": "views\\1013d36c-c335-48ef-9777-1ca99390e11f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "15e1fb6e-8390-40fe-b140-23e493a2d9eb",
+            "Value": {
+                "id": "5130e94b-9c57-49cb-8731-d249b7131066",
+                "resourcePath": "sprites\\sTilesetDirtShade\\sTilesetDirtShade.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -180,6 +196,14 @@
                 "id": "03ded2fc-a849-4f4e-8cc6-97702dc7def5",
                 "resourcePath": "scripts\\zui_remove_child\\zui_remove_child.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1fddfac8-1e9f-49fe-ab0d-ae14f4ea5bd7",
+            "Value": {
+                "id": "ff853455-8f16-47ce-b142-bcc0d81a687c",
+                "resourcePath": "tilesets\\tilesetDirtDarken\\tilesetDirtDarken.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -788,6 +812,14 @@
                 "id": "bb46a384-5f28-4c10-a4a5-fc14d6df0ba0",
                 "resourcePath": "scripts\\@d3d_transform_set_translation\\d3d_transform_set_translation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8e525460-b2a4-46e8-8952-10a408bbbb3b",
+            "Value": {
+                "id": "44931e63-c553-43c0-8db6-8e9d628dda02",
+                "resourcePath": "sprites\\sTilesetDirtDarken\\sTilesetDirtDarken.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
