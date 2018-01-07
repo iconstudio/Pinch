@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "03ed9ba2-7b99-4567-bfad-8e9aa4592cad",
+            "Value": {
+                "id": "49b683a5-569f-4aff-97c4-9f8026a231af",
+                "resourcePath": "scripts\\io_check_pressed_left\\io_check_pressed_left.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0746a0cd-c68e-48c2-9d22-d76d4de849a1",
             "Value": {
                 "id": "8226de1e-e59f-459b-964b-ffebb39124cf",
@@ -298,7 +306,7 @@
             "Key": "326ce431-f278-4a6e-9b52-95436aa41b95",
             "Value": {
                 "id": "5a73f6de-e03f-45dd-8da9-ee85b99d2f02",
-                "resourcePath": "scripts\\io_check_pressed_left\\io_check_pressed_left.yy",
+                "resourcePath": "scripts\\io_check_pressed_up\\io_check_pressed_up.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -631,6 +639,14 @@
             }
         },
         {
+            "Key": "79017996-a9ac-4fa5-afe4-a49c0b5227d0",
+            "Value": {
+                "id": "f1af62ca-d646-4968-829a-2525b3515299",
+                "resourcePath": "scripts\\io_check_down\\io_check_down.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7c0b04d9-0b62-4ea6-b4c5-753b1fe5ae74",
             "Value": {
                 "id": "738d79e0-b791-4c76-8610-180cdd358c4d",
@@ -724,6 +740,14 @@
                 "id": "0c5b5f5c-76b6-4e00-a906-58943992d09a",
                 "resourcePath": "fonts\\fontPushDescription\\fontPushDescription.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "9adf1b80-6a51-4ac7-ab3d-0c2c651c1304",
+            "Value": {
+                "id": "2585f842-ec41-444f-b976-fc89d69f14a5",
+                "resourcePath": "scripts\\io_check_pressed_down\\io_check_pressed_down.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1067,6 +1091,14 @@
             "Value": {
                 "id": "9928ebf5-9f79-4d87-9efd-541fae16363a",
                 "resourcePath": "scripts\\zui_set_visible\\zui_set_visible.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ca82e430-fcc3-43e8-b2ea-80d084c2699d",
+            "Value": {
+                "id": "9aa3bdea-0c62-4502-899e-4daa5dfbedcc",
+                "resourcePath": "scripts\\io_check_up\\io_check_up.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1484,9 +1516,13 @@
         "f799ee2b-281e-4f52-9432-5b9af0f018cf",
         "a4e60a2d-c053-4fc4-9b05-4d9adb994e29",
         "e10c8525-65c7-48b5-80cb-48b5a299b5f1",
+        "03ed9ba2-7b99-4567-bfad-8e9aa4592cad",
+        "ca82e430-fcc3-43e8-b2ea-80d084c2699d",
         "326ce431-f278-4a6e-9b52-95436aa41b95",
         "d7966746-461e-46c7-bd99-4c89cb86c8fe",
         "5bac3531-bf5b-4713-b4d2-8626c13a37da",
+        "79017996-a9ac-4fa5-afe4-a49c0b5227d0",
+        "9adf1b80-6a51-4ac7-ab3d-0c2c651c1304",
         "4dee304a-ee9c-4a21-9159-1d5c2796d640",
         "cae9c7c4-62fc-43ea-85da-f331292cb174",
         "ea0d5bbd-e154-4f28-a63e-0eb074fa89cd",
