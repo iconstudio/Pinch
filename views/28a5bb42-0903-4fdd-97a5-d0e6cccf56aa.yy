@@ -14,7 +14,11 @@
         "79017996-a9ac-4fa5-afe4-a49c0b5227d0",
         "9adf1b80-6a51-4ac7-ab3d-0c2c651c1304",
         "4dee304a-ee9c-4a21-9159-1d5c2796d640",
-        "cae9c7c4-62fc-43ea-85da-f331292cb174"
+        "cae9c7c4-62fc-43ea-85da-f331292cb174",
+        "55e71917-0792-4fd6-a99b-b660d9091c73",
+        "fafc743b-94d5-43fd-a59a-b5ae475aeab5",
+        "93d6a579-80ca-437b-a2f5-94831c6e0eb4",
+        "3cb8b8aa-2fb8-4d13-8574-6cccee59a9ff"
     ],
     "filterType": "GMScript",
     "folderName": "IO",

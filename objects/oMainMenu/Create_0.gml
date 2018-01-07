@@ -4,11 +4,9 @@ dmode = 0
 ipush = 0
 
 zui_set_anchor(0.5, 0.5)
-zui_set_size(800, 400)
+zui_set_size(display_get_gui_width(), display_get_gui_height())
 
-var zw = zui_get_width()
-var zh = zui_get_height()
-
+menu_title = ""
 menu_first = menu_node_add()
 menu_focus = menu_first
 menu_prefocus = noone
@@ -52,5 +50,6 @@ with (menu_option) {
 menu_exit = menu_node_add()
 with (menu_exit) {
 	menu_button_add("Yes", menu_callback_end)
-	menu_button_add("No", menu_callback_back)
+	button_focus = menu_button_add("No", menu_callback_back)
+	button_pos = 1
 }
