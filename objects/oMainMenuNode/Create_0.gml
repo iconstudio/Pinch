@@ -11,4 +11,3 @@ menu_lasty = 0
 
 button_list = ds_list_create()
 button_focus = noone
-button_pos = 0

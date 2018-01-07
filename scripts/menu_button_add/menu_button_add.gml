@@ -10,12 +10,20 @@ if argument_count > 2 and argument[2] {
 	ay = 0
 }
 
+var nsz = ds_list_size(button_list)
 var zw = zui_get_width()
 var button_id = zui_create(zw * 0.5, cy, oMainMenuButton)
 with (button_id) {
 	zui_set_size(zw, 45)
 	caption = argument[0]
 	callback = argument[1]
+	
+	if nsz > 0 {
+		next = other.button_list[| 0]
+		other.button_list[| nsz - 1].next = id
+	} else {
+		next = id	
+	}
 }
 
 menu_lasty += ay

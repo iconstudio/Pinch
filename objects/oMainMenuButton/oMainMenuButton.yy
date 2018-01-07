@@ -115,6 +115,20 @@
             "value": "noone",
             "varName": "callback",
             "varType": 5
+        },
+        {
+            "id": "e0bf7e77-3fa5-4ba2-a1ee-2b15fe7810ee",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "next",
+            "varType": 5
         }
     ],
     "solid": false,

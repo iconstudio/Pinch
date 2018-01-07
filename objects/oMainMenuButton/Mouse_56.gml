@@ -1,7 +1,7 @@
 /// @description Execute callback script
 
 if (pressed) {
-	pressed = 0;
+	pressed = false;
 	if (zui_get_hover()) {
 		if (callback >= 0) {
 			with oMainMenu

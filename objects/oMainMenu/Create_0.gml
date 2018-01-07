@@ -15,7 +15,7 @@ menu_preprefocus = noone
 with (menu_first) {
 	zui_set_visible(true)
 	
-	menu_button_add("Start game", menu_callback_start)
+	button_focus = menu_button_add("Start game", menu_callback_start)
 	menu_button_add("Achievements", menu_callback_achievement)
 	menu_button_add("Log", menu_callback_log)
 	menu_button_add("Option", menu_callback_option)
@@ -24,18 +24,18 @@ with (menu_first) {
 
 menu_start = menu_node_add()
 with (menu_start) {
-	menu_button_add("Artifact 1 - ", -1)
+	button_focus = menu_button_add("Artifact 1 - ", -1)
 	menu_button_add("Back", menu_callback_back, true)
 }
 
 menu_achievement = menu_node_add()
 with (menu_achievement) {
-	menu_button_add("Back", menu_callback_back, true)
+	button_focus = menu_button_add("Back", menu_callback_back, true)
 }
 
 menu_log = menu_node_add()
 with (menu_log) {
-	menu_button_add("Back", menu_callback_back, true)
+	button_focus = menu_button_add("Back", menu_callback_back, true)
 }
 
 menu_option = menu_node_add()
@@ -44,12 +44,11 @@ with (menu_option) {
 	menu_button_add("Music Volume", -1)
 	menu_button_add("Effect", -1)
 	menu_button_add("Fullscreen", -1)
-	menu_button_add("Back", menu_callback_back, true)
+	button_focus = menu_button_add("Back", menu_callback_back, true)
 }
 	
 menu_exit = menu_node_add()
 with (menu_exit) {
 	menu_button_add("Yes", menu_callback_end)
 	button_focus = menu_button_add("No", menu_callback_back)
-	button_pos = 1
 }
