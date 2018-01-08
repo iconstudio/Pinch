@@ -13,4 +13,8 @@ if hp_regen != 0 {
 if hp <= 0
 	status = status_dead
 
+if status >= status_stun {
+	xVelLimit = 16
+}
+
 event_inherited()

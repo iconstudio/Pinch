@@ -29,3 +29,18 @@ if zui_get_hover() or __parent.button_focus == id {
 	if hpush != 0
 		hpush -= hpush * 0.04
 }
+/*
+var stex = sprite_get_texture(sprite_index, image_index)
+var sx = x - sprite_xoffset
+var sy = y - sprite_yoffset
+
+draw_primitive_begin_texture(pr_trianglefan, stex)
+draw_vertex_texture(sx, sy, 0, 0)
+draw_vertex_texture(sx + sprite_width, sy, 1, 0)
+draw_vertex_texture(sx, sy + sprite_height, 0, 1)
+
+draw_vertex_texture(sx + sprite_width, sy, 1, 0)
+draw_vertex_texture(sx, sy + sprite_height, 0, 1)
+draw_vertex_texture(sx + sprite_width, sy + sprite_height, 1, 1)
+draw_primitive_end()
+*/

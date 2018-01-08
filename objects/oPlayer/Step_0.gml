@@ -12,20 +12,20 @@ var ladder = max(instance_place(x, y, oLadder), instance_place(x, y + my + sign(
 
 if ladder != noone {
 	if my != 0 {
-		if !laddering { // get on ladder
+		if !laddering and (!onAir or (onAir and my < 0)) { // get on ladder
 			laddering = true
 			x = ladder.x + ladder.lxoffset
 			y = (ladder.y + y) / 2
-		} else { // move
+			xVel = 0
+			yVel = 0
+			jumped = false
+			shielding = false
+		} else if laddering { // move
 			y += my
 		}
 	}
 
-	if laddering {
-		xVel = 0
-		yVel = 0
-	}
-} else {
+} else if laddering {
 	// grounded
 	if my < 0
 		move_outside_solid(90, 4)
@@ -41,7 +41,7 @@ if !laddering {
 	mx = io_check_right() - io_check_left()
 
 	if mx != 0 and !shielding {
-		xVel = mx * 5
+		xVel += mx
 	}
 
 	if !onAir {
@@ -51,16 +51,16 @@ if !laddering {
 
 	if jumped and jump_count < jump_count_max {
 		jump_count++
-		//yVel = -10
+		yVel = -10
 		
-		yGravity /= 2
+		//yGravity /= 2
 	} else {
 		jump_count = jump_count_max
 		jumped = false
 	}
 
 	if !onAir and io_check_pressed_jump() { // do Jump
-		yVel = -12 // flash jump
+		yVel = -10 // flash jump
 	
 		jump_count = 0
 		jumped = true
@@ -106,6 +106,8 @@ if !laddering {
 	}
 } else {
 	yGravity = 0
+	xVel = 0
+	yVel = 0
 }
 
 if stomp_count > 0
