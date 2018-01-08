@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "02f0e779-b5ae-430d-b866-eb5965712ae9",
+            "Value": {
+                "id": "96527d96-c837-435b-bb60-47dbe75c27e1",
+                "resourcePath": "tilesets\\tilesetGrass\\tilesetGrass.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "03ed9ba2-7b99-4567-bfad-8e9aa4592cad",
             "Value": {
                 "id": "49b683a5-569f-4aff-97c4-9f8026a231af",
@@ -95,14 +103,6 @@
             }
         },
         {
-            "Key": "0caa410b-3109-4dd5-b7c7-4c7b0607013a",
-            "Value": {
-                "id": "6aec91d5-29b4-4044-bec7-75fda15ae1c4",
-                "resourcePath": "tilesets\\tilesetDirtShade\\tilesetDirtShade.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "0fb14fd4-0d03-455b-a32f-569011e5820d",
             "Value": {
                 "id": "493c8d32-be31-43ec-b069-6d411d0fc4d7",
@@ -130,7 +130,7 @@
             "Key": "15e1fb6e-8390-40fe-b140-23e493a2d9eb",
             "Value": {
                 "id": "5130e94b-9c57-49cb-8731-d249b7131066",
-                "resourcePath": "sprites\\sTilesetDirtShade\\sTilesetDirtShade.yy",
+                "resourcePath": "sprites\\sTilesetGrass\\sTilesetGrass.yy",
                 "resourceType": "GMSprite"
             }
         },

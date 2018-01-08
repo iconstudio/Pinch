@@ -3,6 +3,8 @@
 if status >= status_stun {
 	event_inherited()
 	exit	
+} else {
+	xVelLimit = 3
 }
 
 var mx = 0, my = 0
@@ -59,7 +61,7 @@ if !laddering {
 		jumped = false
 	}
 
-	if !onAir and io_check_pressed_jump() { // do Jump
+	if !onAir and io_check_pressed_jump() and !shielding { // do Jump
 		yVel = -10 // flash jump
 	
 		jump_count = 0
@@ -75,7 +77,7 @@ if !laddering {
 				}
 			}
 		} else {
-			if mx == 0 and io_check_pressed_down() { // do Getting Shield
+			if mx == 0 and io_check_pressed_down() and !shielding { // do Getting Shield
 				shielding = true
 				shield_count = shield_count_max
 			}
@@ -87,6 +89,7 @@ if !laddering {
 				} else {
 					shield_count = 0
 					invincible = 0
+					shielding = false
 				}
 			} else {
 				shielding = false
