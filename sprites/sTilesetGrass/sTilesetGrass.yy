@@ -6,10 +6,10 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 79,
+    "bbox_bottom": 159,
     "bbox_left": 0,
-    "bbox_right": 59,
-    "bbox_top": 20,
+    "bbox_right": 139,
+    "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -64,7 +64,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "f3436a63-5d60-4568-8e7f-4ac5f7468ffd",
     "type": 0,
-    "width": 120,
+    "width": 140,
     "xorig": 0,
     "yorig": 0
 }
