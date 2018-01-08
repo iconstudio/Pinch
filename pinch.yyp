@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "4a67ab37-511c-4ad4-9983-7ccdff68e1e6",
+            "Value": {
+                "id": "66f72cf2-2745-4f79-8ca7-76ae1a7b4ebe",
+                "resourcePath": "sprites\\sTilesetShade\\sTilesetShade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4a6d740f-1b18-4452-8e16-8ae876ac4409",
             "Value": {
                 "id": "9b29197e-e57f-435b-bdd0-17f07529e984",
@@ -575,6 +583,14 @@
             }
         },
         {
+            "Key": "574d098d-520b-47b9-a42e-80410d3ac6de",
+            "Value": {
+                "id": "5377f0a3-28b7-4480-9d28-30f52375ec9a",
+                "resourcePath": "sprites\\sRope\\sRope.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5932a1e2-2306-4d41-9d98-91fd0f99a388",
             "Value": {
                 "id": "9a291b35-96ac-423d-9cf7-63ece520500b",
@@ -604,6 +620,14 @@
                 "id": "cd27fe78-92cb-46c6-83ec-1397752c3231",
                 "resourcePath": "scripts\\io_check_pressed_right\\io_check_pressed_right.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5f321f72-9edb-4037-a30a-f86e78ab452f",
+            "Value": {
+                "id": "c1e29968-8a2c-4bdb-bafc-9a55dbc396a4",
+                "resourcePath": "tilesets\\tilesetShade\\tilesetShade.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -852,6 +876,14 @@
                 "id": "0c5b5f5c-76b6-4e00-a906-58943992d09a",
                 "resourcePath": "fonts\\fontPushDescription\\fontPushDescription.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "98d30fbc-75dd-4acc-9bd6-1652da5d365d",
+            "Value": {
+                "id": "2b0d9367-e19d-4661-8cd7-494645a2bef5",
+                "resourcePath": "views\\98d30fbc-75dd-4acc-9bd6-1652da5d365d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
