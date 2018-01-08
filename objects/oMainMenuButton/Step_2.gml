@@ -22,12 +22,12 @@ if mouse_check_button_released(mb_left) or io_check_released_jump() {
 if zui_get_hover() or __parent.button_focus == id {
 	__parent.button_focus = id
 	if hpush < 1
-		hpush += hpush * 0.2 + 0.1
+		hpush += hpush * 0.2 + 0.2
 	else
 		hpush = 1
 } else { 
 	if hpush != 0
-		hpush -= hpush * 0.04
+		hpush -= hpush * 0.4
 }
 /*
 var stex = sprite_get_texture(sprite_index, image_index)

@@ -9,8 +9,11 @@ if status >= status_stun {
 
 var mx = 0, my = 0
 
-my = (io_check_down() - io_check_up()) * 3
-var ladder = max(instance_place(x, y, oLadder), instance_place(x, y + my + sign(my), oLadder))
+my = (io_check_down() - io_check_up()) * ladder_speed
+
+var ladderc = instance_place(x, y, oLadder)
+var ladderu = instance_place(x, y + my + sign(my), oLadder)
+var ladder = max(ladderc, ladderu)
 
 if ladder != noone {
 	if my != 0 {
@@ -23,17 +26,42 @@ if ladder != noone {
 			jumped = false
 			shielding = false
 		} else if laddering { // move
-			y += my
+			if ladderu and ladderc { // normal
+				y += my
+			} else { // make player doesnt collide with walls
+				// there is no ladder on moveway, or no ladder on current position
+				
+				if my < 0 { // move up
+					var check = false
+					if ladderu != noone {
+						with ladderu {
+							if collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - ladder_speed, object_index, false, true)
+								check = true
+						}
+					}
+					
+					if place_free(x, y - ladder_speed - 1) { // get on the top of a block
+						y += my
+					} else if check and place_free(x, y - 1) {
+						y += my
+					}
+					move_outside_solid(270, ladder_speed + 1)
+				} else { // move down
+					if place_free(x, y + ladder_speed + 1) {
+						y += my
+					} else { // grounded
+						move_contact_solid(270, ladder_speed + 1)
+						onAir = false
+						laddering = false
+					}
+					move_outside_solid(90, ladder_speed + 1)
+				}
+			}
 		}
 	}
 
 } else if laddering {
-	// grounded
-	if my < 0
-		move_outside_solid(90, 4)
-	else
-		move_outside_solid(270, 4)
-	move_contact_solid(270, 4)
+	move_contact_solid(270, ladder_speed + 1)
 	laddering = false
 }
 
@@ -43,7 +71,7 @@ if !laddering {
 	mx = io_check_right() - io_check_left()
 
 	if mx != 0 and !shielding {
-		xVel += mx
+		xVel += mx * 2
 	}
 
 	if !onAir {
@@ -68,13 +96,15 @@ if !laddering {
 		jumped = true
 	} else { // while not jumping
 		if onAir {
-				if yVel > 0 and io_check_pressed_down() { // do Stomping
-					if stomp_count > 0 { // double pressed
-						stomp_count = 0
+			var cond1 = false //io_check_pressed_down() and io_check_
+			var cond2 = io_check_down() and io_check_pressed_jump()
+			if cond1 or cond2 { // do Stomping
+				//if stomp_count > 0 { // double pressed
+				//	stomp_count = 0
 					yVel = max(yVel, yVelMax)
-				} else {
-					stomp_count = stomp_count_max
-				}
+				//} else {
+				//	stomp_count = stomp_count_max
+				//}
 			}
 		} else {
 			if mx == 0 and io_check_pressed_down() and !shielding { // do Getting Shield
