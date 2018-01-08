@@ -2,13 +2,13 @@
     "id": "574d098d-520b-47b9-a42e-80410d3ac6de",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sRope",
+    "name": "sRope1",
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 0,
-    "bbox_left": 0,
-    "bbox_right": 0,
+    "bbox_bottom": 19,
+    "bbox_left": 8,
+    "bbox_right": 11,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 64,
+    "height": 20,
     "layers": [
         {
             "id": "8f250926-91b7-432a-be4a-6724dafc4450",
@@ -64,7 +64,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "f3436a63-5d60-4568-8e7f-4ac5f7468ffd",
     "type": 0,
-    "width": 64,
+    "width": 20,
     "xorig": 0,
     "yorig": 0
 }

@@ -270,6 +270,20 @@
             "value": "1",
             "varName": "yGravity",
             "varType": 0
+        },
+        {
+            "id": "ff803481-20f1-4d5e-acf1-e719be65090b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "yGravity_default",
+            "varType": 0
         }
     ],
     "solid": false,
