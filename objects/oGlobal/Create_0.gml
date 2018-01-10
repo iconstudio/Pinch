@@ -12,4 +12,4 @@ else
 	fxaa_on = false
 fxaa_strength = 4
 
-//fxaa_on = false
+fxaa_on = false

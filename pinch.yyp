@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "34249d17-cb7b-4340-be77-383dac806168",
+            "Value": {
+                "id": "b74da187-96fd-4238-9f08-57c2871a9b9e",
+                "resourcePath": "sprites\\sBackgroundRed\\sBackgroundRed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "374ca2fa-b061-4a07-b4e6-03b63caa156c",
             "Value": {
                 "id": "d4bc3970-99a5-4df9-b1da-b50f62008f68",
@@ -1060,6 +1068,14 @@
                 "id": "29810b32-5192-4a59-8fb0-c47f36ddcfcd",
                 "resourcePath": "scripts\\zui_get_enabled\\zui_get_enabled.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ab7aa375-4bd2-4acd-b6c5-5cdfd77346af",
+            "Value": {
+                "id": "2ede7080-49ab-430d-8821-a08c0d2a6bb2",
+                "resourcePath": "objects\\oEnemyParent\\oEnemyParent.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -8,6 +8,7 @@ ladder_speed = 3
 jumped = false
 jump_count_max = second(0.06)
 jump_count = jump_count_max
+jump_speed = -10
 
 stomp_count_max = 7
 stomp_count = stomp_count_max

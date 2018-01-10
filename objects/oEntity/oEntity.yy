@@ -163,6 +163,34 @@
             "value": "0",
             "varName": "sh",
             "varType": 0
+        },
+        {
+            "id": "ce9b31d3-763d-483e-a907-af40c9ca506d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ev",
+            "varType": 0
+        },
+        {
+            "id": "727a6982-f2b8-488f-89ff-e04115575db2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "stun_count",
+            "varType": 0
         }
     ],
     "solid": false,

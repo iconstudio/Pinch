@@ -7,9 +7,8 @@ if status >= status_stun {
 	xVelLimit = 3
 }
 
-var mx = 0, my = 0
-
-my = (io_check_down() - io_check_up()) * ladder_speed
+var mx = io_check_right() - io_check_left()
+, my = (io_check_down() - io_check_up()) * ladder_speed;
 
 var ladderc = instance_place(x, y, oLadder)
 var ladderu = instance_place(x, y + my + sign(my), oLadder)
@@ -35,17 +34,16 @@ if ladder != noone {
 					var check = false
 					if ladderu != noone {
 						with ladderu {
-							if collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - ladder_speed, object_index, false, true)
+							if collision_rectangle(bbox_left, bbox_top - 1, bbox_right, bbox_top - ladder_speed, object_index, false, true)
 								check = true
 						}
 					}
 					
-					if place_free(x, y - ladder_speed - 1) { // get on the top of a block
-						y += my
-					} else if check and place_free(x, y - 1) {
+					// get on the top of a block
+					if place_free(x, y + my + sign(my)) or check {
 						y += my
 					}
-					move_outside_solid(270, ladder_speed + 1)
+					//move_outside_solid(270, ladder_speed + 1)
 				} else { // move down
 					if place_free(x, y + ladder_speed + 1) {
 						y += my
@@ -67,11 +65,9 @@ if ladder != noone {
 
 if !laddering {
 	yGravity = yGravity_default
-	
-	mx = io_check_right() - io_check_left()
 
 	if mx != 0 and !shielding {
-		xVel += mx * 2
+		xVel += mx
 	}
 
 	if !onAir {
@@ -81,19 +77,14 @@ if !laddering {
 
 	if jumped and jump_count < jump_count_max {
 		jump_count++
-		yVel = -10
-		
-		//yGravity /= 2
+		yVel = -8
 	} else {
 		jump_count = jump_count_max
 		jumped = false
 	}
 
 	if !onAir and io_check_pressed_jump() and !shielding { // do Jump
-		yVel = -10 // flash jump
-	
-		jump_count = 0
-		jumped = true
+		event_user(10) // flash jump
 	} else { // while not jumping
 		if onAir {
 			var cond1 = false //io_check_pressed_down() and io_check_
@@ -124,7 +115,7 @@ if !laddering {
 			} else {
 				shielding = false
 			}
-		
+
 			if !shielding {
 				shield_count = shield_count_max
 				invincible = 0
@@ -141,6 +132,18 @@ if !laddering {
 	yGravity = 0
 	xVel = 0
 	yVel = 0
+	
+	if io_check_pressed_jump() {
+		if place_free(x, y)	and place_free(x, y - 1) and place_free(x, y + 1) {
+			if mx == 0 { // jump at current position
+				event_user(10)
+			} else {
+				if place_free(x + mx * 4 + sign(mx), y) {
+					event_user(10)
+				}
+			}
+		}
+	}
 }
 
 if stomp_count > 0
