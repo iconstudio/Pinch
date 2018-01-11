@@ -2,27 +2,28 @@
 
 randomize()
 
-global.__layer_dict = ds_map_create()
-#macro zui_layer
+window_set_fullscreen(true)
+var dw = window_get_width() // 800
+var dh = window_get_height() // 400
 
-zui_main()
-application_surface_draw_enable(false)
-/*
-layer_force_draw_depth(true, 0)
-
-global.Camera = camera_create()
-camera_set_proj_mat(global.Camera, matrix_build_identity())
-camera_set_view_target(global.Camera, oPlayer)
-camera_set_view_size(global.Camera, 800, 400)
+var wscale = 800 / dw
+var screenheight = 400 / wscale
+var screeny = abs(screenheight - dh) / 2
 
 for (var i = room_first; room_exists(i); i = room_next(i)) {
-	room_set_view_enabled(i, 0)
-	room_set_camera(i, 0, global.Camera)
+	room_set_view_enabled(i, true)
+	room_set_viewport(i, 0, true, 0, screeny, dw, dh)
 }
-*/
+
+display_set_gui_size(800, 400);
+window_set_size(dw, dh);
+
 global.Gamepad = -1
 global.GamepadType = 0
 global.GamepadSprite = array_create(3, sIconControllerXbox, sIconControllerPlayStation, sIconControllerOther)
+
+zui_main()
+application_surface_draw_enable(false)
 
 #macro gamepad_type_xbox 0
 #macro gamepad_type_playstation 1

@@ -3,6 +3,8 @@
 player_id_set(id)
 
 laddering = false
+ladder_count_max = 4
+ladder_count = 0
 ladder_speed = 3
 
 jumped = false

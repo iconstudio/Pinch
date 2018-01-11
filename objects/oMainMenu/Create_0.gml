@@ -4,7 +4,7 @@ dmode = 0
 ipush = 0
 
 zui_set_anchor(0.5, 0.5)
-zui_set_size(display_get_gui_width(), display_get_gui_height())
+zui_set_size(view_wport, view_hport)
 
 menu_title = ""
 menu_first = menu_node_add()

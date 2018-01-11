@@ -14,16 +14,20 @@ var ladderc = instance_place(x, y, oLadder)
 var ladderu = instance_place(x, y + my + sign(my), oLadder)
 var ladder = max(ladderc, ladderu)
 
+if mx != 0
+	image_xscale = mx
+
 if ladder != noone {
 	if my != 0 {
-		if !laddering and (!onAir or (onAir and my < 0)) { // get on ladder
+		if !laddering and (!onAir or (onAir and my < 0)) and ladder_count == 0 { // get on ladder
 			laddering = true
 			x = ladder.x + ladder.lxoffset
-			y = (ladder.y + y) / 2
+			//y = (ladder.y + y) / 2
 			xVel = 0
 			yVel = 0
 			jumped = false
 			shielding = false
+			ladder_count = ladder_count_max
 		} else if laddering { // move
 			if ladderu and ladderc { // normal
 				y += my
@@ -34,25 +38,25 @@ if ladder != noone {
 					var check = false
 					if ladderu != noone {
 						with ladderu {
-							if collision_rectangle(bbox_left, bbox_top - 1, bbox_right, bbox_top - ladder_speed, object_index, false, true)
+							if collision_rectangle(bbox_left, bbox_top - 1, bbox_right, bbox_top - other.ladder_speed, object_index, false, true)
 								check = true
 						}
 					}
 					
 					// get on the top of a block
-					if place_free(x, y + my + sign(my)) or check {
+					if place_free(x, y - ladder_speed - 1) or check {
 						y += my
 					}
 					//move_outside_solid(270, ladder_speed + 1)
-				} else { // move down
-					if place_free(x, y + ladder_speed + 1) {
+				} else if !shielding { // move down
+					if place_free(x, y + ladder_speed + 1) or ladderu {
 						y += my
 					} else { // grounded
 						move_contact_solid(270, ladder_speed + 1)
 						onAir = false
 						laddering = false
+						move_outside_solid(90, ladder_speed + 1)
 					}
-					move_outside_solid(90, ladder_speed + 1)
 				}
 			}
 		}
@@ -146,7 +150,7 @@ if !laddering {
 	}
 }
 
-if stomp_count > 0
-	stomp_count--
+if ladder_count > 0
+	ladder_count--
 
 event_inherited()
