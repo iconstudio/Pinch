@@ -15,11 +15,11 @@
                     "mvc": "1.0",
                     "groupName": "Fonts",
                     "targets": 28700761398563054,
-                    "autocrop": true,
+                    "autocrop": false,
                     "border": 8,
                     "groupParent": "00000000-0000-0000-0000-000000000000",
                     "mipsToGenerate": 0,
-                    "scaled": true
+                    "scaled": false
                 }
             },
             {

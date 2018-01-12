@@ -1,4 +1,4 @@
-/// @description 
+/// @description Update
 
 if begin_y != y
 	y += (begin_y - y) / 5

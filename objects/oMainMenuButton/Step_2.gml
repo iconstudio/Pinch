@@ -3,12 +3,14 @@
 if !__parent.__visible
 	return;
 
+var _vk_check_p = io_check_pressed_jump() or keyboard_check_pressed(vk_enter)
 if (zui_get_hover() and mouse_check_button_pressed(mb_left))
-or (io_check_pressed_jump() and __parent.__visible and __parent.button_focus == id) {
+or (_vk_check_p and __parent.__visible and __parent.button_focus == id) {
 	pressed = true
 }
 
-if mouse_check_button_released(mb_left) or io_check_released_jump() {
+var _vk_check_r = io_check_released_jump() or keyboard_check_released(vk_enter)
+if mouse_check_button_released(mb_left) or _vk_check_r {
 	if (pressed) {
 		pressed = false
 		if (callback >= 0) {

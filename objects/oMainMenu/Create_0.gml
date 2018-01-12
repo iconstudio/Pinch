@@ -4,7 +4,7 @@ dmode = 0
 ipush = 0
 
 zui_set_anchor(0.5, 0.5)
-zui_set_size(view_wport, view_hport)
+zui_set_size(__parent.__width, __parent.__height)
 
 menu_title = ""
 menu_first = menu_node_add()
@@ -51,4 +51,11 @@ menu_exit = menu_node_add()
 with (menu_exit) {
 	menu_button_add("Yes", menu_callback_end)
 	button_focus = menu_button_add("No", menu_callback_back)
+}
+
+menu_label = zui_create(zui_get_width() * 0.1, zui_get_height() - 40, oUILabel)
+with (menu_label) {
+	color = $ffffff
+	font = fontLarge
+	halign = 0
 }

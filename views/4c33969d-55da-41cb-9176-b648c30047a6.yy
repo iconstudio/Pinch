@@ -6,7 +6,8 @@
     "children": [
         "0ca95cb6-2223-4500-9faa-e9ece7917bb3",
         "98d30fbc-75dd-4acc-9bd6-1652da5d365d",
-        "739d6706-b986-4c4f-a0ac-9fde413ff0fe"
+        "739d6706-b986-4c4f-a0ac-9fde413ff0fe",
+        "19ab95d1-37d7-4088-af78-80ad33eb442f"
     ],
     "filterType": "GMSprite",
     "folderName": "Game Objects",

@@ -2,7 +2,7 @@
 
 zui_set_visible(false)
 zui_set_anchor(0, 0)
-zui_set_size(800, 300)
+zui_set_size(__parent.__width,  __parent.__height)
 
 image_blend = 0
 

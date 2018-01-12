@@ -2,21 +2,25 @@
 
 randomize()
 
-window_set_fullscreen(true)
-var dw = window_get_width() // 800
-var dh = window_get_height() // 400
+var dw = 800
+var dh = 400
+//window_set_fullscreen(true)
+//*
+//var dw = display_get_width()
+//var dh = display_get_height()
 
-var wscale = 800 / dw
-var screenheight = 400 / wscale
-var screeny = abs(screenheight - dh) / 2
+//var wscale = 800 / dw
+//var screenheight = 400 / wscale
+//var screeny = abs(screenheight - dh) / 2
 
 for (var i = room_first; room_exists(i); i = room_next(i)) {
 	room_set_view_enabled(i, true)
-	room_set_viewport(i, 0, true, 0, screeny, dw, dh)
+	room_set_viewport(i, 0, true, 0, 0, dw, dh)
 }
 
 display_set_gui_size(800, 400);
 window_set_size(dw, dh);
+//*/
 
 global.Gamepad = -1
 global.GamepadType = 0

@@ -18,7 +18,7 @@ if mx != 0
 	image_xscale = mx
 
 if ladder != noone {
-	if my != 0 {
+	if my != 0 and ladder_delay == 0 {
 		if !laddering and (!onAir or (onAir and my < 0)) and ladder_count == 0 { // get on ladder
 			laddering = true
 			x = ladder.x + ladder.lxoffset
@@ -28,6 +28,7 @@ if ladder != noone {
 			jumped = false
 			shielding = false
 			ladder_count = ladder_count_max
+			ladder_delay = 3
 		} else if laddering { // move
 			if ladderu and ladderc { // normal
 				y += my
@@ -100,11 +101,13 @@ if !laddering {
 				//} else {
 				//	stomp_count = stomp_count_max
 				//}
+				ladder_delay = 5
 			}
 		} else {
 			if mx == 0 and io_check_pressed_down() and !shielding { // do Getting Shield
 				shielding = true
 				shield_count = shield_count_max
+				ladder_delay = 5
 			}
 		
 			if io_check_down() and shielding {
@@ -152,5 +155,10 @@ if !laddering {
 
 if ladder_count > 0
 	ladder_count--
+
+if ladder_delay > 0
+	ladder_delay--
+else
+	ladder_delay = 0
 
 event_inherited()

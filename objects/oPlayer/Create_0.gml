@@ -6,6 +6,7 @@ laddering = false
 ladder_count_max = 4
 ladder_count = 0
 ladder_speed = 3
+ladder_delay = 0
 
 jumped = false
 jump_count_max = second(0.06)

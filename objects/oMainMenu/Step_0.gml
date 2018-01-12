@@ -20,3 +20,11 @@ if dmode == 0 {
 	}
 }
 
+var rtitle = ""
+if menu_focus != menu_first and menu_title != "" {
+	rtitle = menu_title
+}
+
+with (menu_label) {
+	 caption = rtitle
+}

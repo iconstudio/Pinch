@@ -1,5 +1,6 @@
 /// @description Game variables
 
+global.paused = false
 global.my_player = noone
 
 callto = noone
