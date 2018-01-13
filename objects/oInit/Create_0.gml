@@ -2,32 +2,36 @@
 
 randomize()
 
-var dw = 800
-var dh = 400
-//window_set_fullscreen(true)
+window_set_fullscreen(true)
 //*
-//var dw = display_get_width()
-//var dh = display_get_height()
+var dw = display_get_width()
+var dh = display_get_height()
 
-//var wscale = 800 / dw
+var aspect = dw / 800
+var vw = dw, vh = 400 * aspect
 //var screenheight = 400 / wscale
 //var screeny = abs(screenheight - dh) / 2
 
+var nw = display_get_width()
+var nh = display_get_height()
+
 for (var i = room_first; room_exists(i); i = room_next(i)) {
 	room_set_view_enabled(i, true)
-	room_set_viewport(i, 0, true, 0, 0, dw, dh)
+	room_set_viewport(i, 0, true, 0, 0, vw, vh)
 }
 
-display_set_gui_size(800, 400);
-window_set_size(dw, dh);
+display_set_gui_size(vw, vh);
+window_set_size(nw, nh);
 //*/
+
 
 global.Gamepad = -1
 global.GamepadType = 0
 global.GamepadSprite = array_create(3, sIconControllerXbox, sIconControllerPlayStation, sIconControllerOther)
 
 zui_main()
-application_surface_draw_enable(false)
+global.applicable = true
+application_surface_draw_enable(true)
 
 #macro gamepad_type_xbox 0
 #macro gamepad_type_playstation 1

@@ -1,5 +1,8 @@
 /// @description Drawing application surface with some options
 
+if global.applicable
+	exit
+
 // DISABLE ALPHABLEND BECAUSE SURFACES //
 gpu_set_blendenable(false);
 

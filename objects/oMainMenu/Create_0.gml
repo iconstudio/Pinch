@@ -53,7 +53,7 @@ with (menu_exit) {
 	button_focus = menu_button_add("No", menu_callback_back)
 }
 
-menu_label = zui_create(zui_get_width() * 0.1, zui_get_height() - 40, oUILabel)
+menu_label = zui_create(zui_get_width() * 0.1, zui_get_height() * 0.5, oUILabel)
 with (menu_label) {
 	color = $ffffff
 	font = fontLarge

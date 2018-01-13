@@ -18,7 +18,7 @@
                     "autocrop": false,
                     "border": 8,
                     "groupParent": "00000000-0000-0000-0000-000000000000",
-                    "mipsToGenerate": 0,
+                    "mipsToGenerate": -1,
                     "scaled": false
                 }
             },

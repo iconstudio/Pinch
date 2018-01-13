@@ -6,7 +6,7 @@
 
 var cy = menu_lasty, ay = 50
 if argument_count > 2 and argument[2] {
-	cy = zui_get_height() - 100
+	cy = zui_get_height() - 50
 	ay = 0
 }
 
@@ -18,12 +18,13 @@ with (button_id) {
 	caption = argument[0]
 	callback = argument[1]
 	
-	if nsz > 0 {
-		next = other.button_list[| 0]
-		before = other.button_list[| nsz - 1]
+	if nsz > 0 { // 2 or more
+		next = other.button_list[| 0] // wrap last to first
+		before = other.button_list[| nsz - 1] // link this to before
 		
-		before.next = id
-	} else {
+		before.next = id // link before to this
+		next.before = id // wrap first to this
+	} else { // first
 		next = id
 		before = id
 	}
