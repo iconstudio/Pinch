@@ -2,6 +2,10 @@
 
 player_id_set(id)
 
+// weapons
+wield = "" // item what hold on
+attack_delay = 0
+
 laddering = false
 ladder_count_max = 4
 ladder_count = 0

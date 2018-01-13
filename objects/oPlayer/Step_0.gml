@@ -63,14 +63,20 @@ if ladder != noone {
 		}
 	}
 
-} else if laddering {
+} else if laddering { // move contact if player is on ladder
 	move_contact_solid(270, ladder_speed + 1)
 	laddering = false
 }
 
 if !laddering {
 	yGravity = yGravity_default
+	
+	if instance_exists(wield) {
+		
+	}
+}
 
+if !laddering and status < status_attack { // while not attacking
 	if mx != 0 and !shielding {
 		xVel += mx
 	}
