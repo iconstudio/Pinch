@@ -8,7 +8,7 @@ for (var i = 0; i < ds_list_size(global.player_items); ++i) {
 	
 	if _olddata[0] == argument0 {
 		ds_list_delete(global.player_items, i)
-		_data = array_create(2, argument0, _olddata[1])
+		_data = array_create(2, argument0, _olddata[1] + 1)
 		ds_list_insert(global.player_items, i, _data)
 		exit
 	}

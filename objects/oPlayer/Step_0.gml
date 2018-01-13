@@ -63,7 +63,7 @@ if ladder != noone {
 		}
 	}
 
-} else if laddering { // move contact if player is on ladder
+} else if laddering { // move contact and get off if player is on ladder
 	move_contact_solid(270, ladder_speed + 1)
 	laddering = false
 }
@@ -71,8 +71,15 @@ if ladder != noone {
 if !laddering {
 	yGravity = yGravity_default
 	
-	if instance_exists(wield) {
-		
+	if wield != "" { // attack
+		var _weapon = -1
+		for (var i = 0; i < ds_list_size(global.player_items); ++i) {
+		_weapon = ds_list_find_value(global.player_items, i)
+	
+			if _weapon[0] == wield {
+				break;
+			}
+		}
 	}
 }
 

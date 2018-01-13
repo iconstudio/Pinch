@@ -17,4 +17,5 @@ else
 	fxaa_on = false
 fxaa_strength = 4
 
+// debugging
 fxaa_on = false
