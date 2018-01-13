@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "8cbe259f-7d33-4011-8ab1-18f60afe9f97",
+            "Value": {
+                "id": "a1d01d25-a1d2-4e1a-8173-bc8b072fa7a6",
+                "resourcePath": "objects\\oGameGlobal\\oGameGlobal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8e525460-b2a4-46e8-8952-10a408bbbb3b",
             "Value": {
                 "id": "44931e63-c553-43c0-8db6-8e9d628dda02",
@@ -1034,7 +1042,7 @@
             "Key": "9b3e887e-9dcc-4168-a335-10c68cd5bdb2",
             "Value": {
                 "id": "8cf738f3-0cb5-4861-99e5-58ef8cac0112",
-                "resourcePath": "sprites\\sPlayer1\\sPlayer1.yy",
+                "resourcePath": "sprites\\sPlayerNew\\sPlayerNew.yy",
                 "resourceType": "GMSprite"
             }
         },

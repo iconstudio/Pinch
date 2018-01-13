@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oItemWeaponSwordLong",
     "eventList": [
-        
+        {
+            "id": "d99bee2e-219b-4f5b-809c-a33e47590cab",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a6f422a6-4984-41cf-b080-f190160dc118"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -80,6 +80,10 @@ if !laddering {
 				break;
 			}
 		}
+		
+		if _weapon != -1 {
+			
+		}
 	}
 }
 

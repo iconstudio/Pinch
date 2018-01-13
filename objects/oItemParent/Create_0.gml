@@ -1,4 +1,4 @@
-/// @description Initialazation
+/// @description Initialization
 
 type = 0
 

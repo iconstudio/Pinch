@@ -6,4 +6,8 @@ if room == roomMain {
 	with (zui_main()) {
 		zui_create(zui_get_width() * 0.5, zui_get_height() * 0.5, oMainMenu)
 	}
+} else if room >= roomGame1 {
+	with (zui_main()) {
+		zui_create(0, 0, oGameGlobal, 100)
+	}
 }
