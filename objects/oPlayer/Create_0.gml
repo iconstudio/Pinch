@@ -2,6 +2,8 @@
 
 player_id_set(id)
 
+mask_index = sPlayerMask
+
 // weapons
 wield = "" // item what hold on
 attack_delay = 0

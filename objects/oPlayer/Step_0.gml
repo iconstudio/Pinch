@@ -178,4 +178,10 @@ if ladder_delay > 0
 else
 	ladder_delay = 0
 
+if onAir and !laddering {
+	sprite_index = sPlayerJump
+} else {
+	sprite_index = sPlayer
+}
+
 event_inherited()
