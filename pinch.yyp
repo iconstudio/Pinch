@@ -927,6 +927,14 @@
             }
         },
         {
+            "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
+            "Value": {
+                "id": "e0cc717e-05d0-4a65-b671-2470feea8e6f",
+                "resourcePath": "options\\ios\\options_ios.yy",
+                "resourceType": "GMiOSOptions"
+            }
+        },
+        {
             "Key": "8680e3d3-a1ba-45cf-b1f6-2b5bc14ec76c",
             "Value": {
                 "id": "f3d91593-f064-4450-a547-92839648e8b2",
@@ -1612,6 +1620,14 @@
                 "id": "9ea97d9c-e76d-45bc-8619-fc531f177fc6",
                 "resourcePath": "objects\\oDrawnSprite\\oDrawnSprite.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
+            "Value": {
+                "id": "fe91f754-a776-456d-91fc-64cc6f44d397",
+                "resourcePath": "options\\android\\options_android.yy",
+                "resourceType": "GMAndroidOptions"
             }
         },
         {
