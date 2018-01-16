@@ -94,4 +94,32 @@ instance_create_depth(0,  0,  -1000, oGlobal)
 #macro ABILITY_ATTACK2 4 // enemy can attack with kind of second
 #macro ABILITY_ATTACK3 4 // enemy can attack with kind of third
 
+global.item_dictionary = ds_map_create()
+item_register(ITEM_HOOF, "Hoof", "You can run faster.", "Movement +10%")
+item_register(ITEM_JETPACK_OLD, "Old Jetpack", "You can jump longer.", "Time +10%")
+item_register(ITEM_ADRENALINE, "Adrenaliine", "You can attack faster.", "Attack speed +10%")
+item_register(ITEM_FORK, "Trifork", "You now have more damage.", "Damage +10%")
+item_register(ITEM_FAN, "Fan of Knifes", "Nearby enemies would be hit by knives.", "Fire 25% DMG knives")
+item_register(ITEM_GLOVE, "Gloves", "You can block some projectiles.", "1% probality")
+item_register(ITEM_HPKIT, "Health Kit", "Heal after being hit.", "Gain 10 HP")
+
+// 1스프라이트, 2최소 공격력, 3최대 공격력, 4속도(초), 5범위(20px * 칸)
+// 6방식, 7초기 딜레이(초), 8부가효과 스크립트
+// 공격 방식:
+/*	0: 위에서 아래로 베기
+		1: 앞으로 찌르기
+		2: 제자리에서 돌기
+		3: 뒤에서 앞까지 휘두르기
+*/
+var attr_swordlong = weapon_attribute(sItemWeaponSwordLong, 7, 5, 10, 1, 0.9, 3, 1.5, -1)
+item_register(ITEM_WEAPON_SWORD_LONG, "Long Sword", "Swing in Circle.", "", attr_swordlong)
+var attr_swordgreater = weapon_attribute(-1, 7, 6.5, 13, 1, 0.8, 3, 1.6, -1)
+item_register(ITEM_WEAPON_SWORD_GREATER, "Great Sword", "More Power.", "Damage +30%", attr_swordgreater)
+item_register(ITEM_WEAPON_AXE_CHOP, "Chopping Axe", "Swing horizontally, More Power.", "Damage +30%", 0)
+item_register(ITEM_WEAPON_AXE_SPEED, "Axe of Speed", "Swing Faster", "Attack speed +15%", 0)
+item_register(ITEM_WEAPON_MACE_HEAVY, "Heavy Mace", "More Power.", "Damage +30%", 0)
+item_register(ITEM_WEAPON_MACE_SPIKE, "Bleeding Mace", "Additional Effect", "Bleed Damge, Make Slow", 0)
+item_register(ITEM_WEAPON_SPEAR_REACH, "Spear", "Long Range, Fast", "", 0)
+item_register(ITEM_WEAPON_SPEAR_FORK, "Trident", "More Power, Additional Effect", "Damage +30%, Knock back", 0)
+
 alarm[0] = 1;

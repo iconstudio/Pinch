@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "10b91e99-907d-451b-85a7-d01bca43c66c",
+            "Value": {
+                "id": "1df5b146-99ae-4e61-a948-f36b55fd44ae",
+                "resourcePath": "scripts\\weapon_attribute\\weapon_attribute.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "13e7d445-da34-4838-84f6-e16bea821ea7",
             "Value": {
                 "id": "1a9cd0c8-d846-4993-a566-e045226d2921",
@@ -1487,6 +1495,14 @@
             }
         },
         {
+            "Key": "d0a92550-e0bd-424b-88a9-720c87294374",
+            "Value": {
+                "id": "3b8a6d5b-a100-4b74-b27a-efde58fd944d",
+                "resourcePath": "scripts\\item_register\\item_register.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d34f3e4b-4c5f-496a-ab35-fb0835eb05dd",
             "Value": {
                 "id": "f0e8eb0e-267c-46ed-98bd-1a4a3188f314",
@@ -1963,10 +1979,12 @@
         "e8d7bf9b-b1c6-45f7-81da-cfe5ca725c27",
         "5948aa1e-fbed-4987-a614-274fb4c1fc6f",
         "a4c60548-e6ce-4a69-a06d-bac19c587919",
-        "9e711601-82a9-4818-bf4f-d6d7fca09a39",
-        "cd13ace5-c7fd-45fc-bd9c-d6e4a18ebd37",
+        "d0a92550-e0bd-424b-88a9-720c87294374",
+        "10b91e99-907d-451b-85a7-d01bca43c66c",
         "b9970846-3a22-4d64-8cb8-351360b8e826",
         "747862b6-9b42-439b-9af3-bff6c2607ebe",
+        "9e711601-82a9-4818-bf4f-d6d7fca09a39",
+        "cd13ace5-c7fd-45fc-bd9c-d6e4a18ebd37",
         "01775149-e5c0-450d-896a-3e7faa26cb47"
     ],
     "tutorial": ""

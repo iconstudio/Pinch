@@ -6,6 +6,7 @@ mask_index = sPlayerMask
 
 // weapons
 wield = "" // item what hold on
+wield_data = []
 attack_delay = 0
 
 laddering = false
