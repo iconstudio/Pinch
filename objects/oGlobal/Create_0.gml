@@ -1,7 +1,11 @@
-/// @description Global variables
+/// @description Game global variables
 
 global.paused = false
 global.my_player = noone
+
+// DON'T GET CONFUSED!
+global.player_items = ds_list_create() // only be got and gain constant effects
+global.player_inventory = ds_list_create() // weapon, bullets, usable, etc...
 
 callto = noone
 construct = array_create(3, noone, "", "")
