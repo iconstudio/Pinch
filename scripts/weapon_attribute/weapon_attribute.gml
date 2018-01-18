@@ -16,4 +16,4 @@ return array_create(8, argument0,
 											argument4,
 											argument5,
 											argument6,
-											argument8)
+											argument7)

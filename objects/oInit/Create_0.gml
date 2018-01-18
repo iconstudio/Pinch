@@ -2,13 +2,15 @@
 
 randomize()
 
+#macro view_width 200
+#macro view_height 100
 window_set_fullscreen(true)
 //*
 var dw = display_get_width()
 var dh = display_get_height()
 
-var aspect = dw / 800
-var vw = dw, vh = 400 * aspect
+var aspect = dw / view_width
+var vw = dw, vh = view_height * aspect
 //var screenheight = 400 / wscale
 //var screeny = abs(screenheight - dh) / 2
 
@@ -111,9 +113,9 @@ item_register(ITEM_HPKIT, "Health Kit", "Heal after being hit.", "Gain 10 HP")
 		2: 제자리에서 돌기
 		3: 뒤에서 앞까지 휘두르기
 */
-var attr_swordlong = weapon_attribute(sItemWeaponSwordLong, 7, 5, 10, 1, 0.9, 3, 1.5, -1)
+var attr_swordlong = weapon_attribute(sItemWeaponSwordLong, 7, 10, 1, 0.8, 3, 1.5, -1)
 item_register(ITEM_WEAPON_SWORD_LONG, "Long Sword", "Swing in Circle.", "", attr_swordlong)
-var attr_swordgreater = weapon_attribute(-1, 7, 6.5, 13, 1, 0.8, 3, 1.6, -1)
+var attr_swordgreater = weapon_attribute(sItemWeaponSwordLong, 9.1, 13, 1.1, 0.8, 3, 1.5, -1)
 item_register(ITEM_WEAPON_SWORD_GREATER, "Great Sword", "More Power.", "Damage +30%", attr_swordgreater)
 item_register(ITEM_WEAPON_AXE_CHOP, "Chopping Axe", "Swing horizontally, More Power.", "Damage +30%", 0)
 item_register(ITEM_WEAPON_AXE_SPEED, "Axe of Speed", "Swing Faster", "Attack speed +15%", 0)

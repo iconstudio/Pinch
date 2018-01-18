@@ -3,7 +3,8 @@
     "option_lastchanged": "30 December 2017 3:15:24",
     "option_author": "Iconer",
     "option_sci_usesci": true,
-    "option_mips_for_3d_textures": true
+    "option_mips_for_3d_textures": true,
+    "addon_google_play_services": "5fe58804-f7bd-420f-8761-a03ce297b454;,GoogleMobileAds_Init;GoogleMobileAds_ShowInterstitial;GoogleMobileAds_LoadInterstitial;GoogleMobileAds_InterstitialStatus;GoogleMobileAds_AddBanner;GoogleMobileAds_RemoveBanner;GoogleMobileAds_MoveBanner;GoogleMobileAds_BannerGetWidth;GoogleMobileAds_BannerGetHeight;GoogleMobileAds_UseTestAds;GoogleMobileAds_AddBannerAt;GooglePlayServices_Status;GooglePlayServices_Init;#"
 }←be5f1418-b31b-48af-a023-f04cdf6e5121|{
     "textureGroups": {
         "Additions": [

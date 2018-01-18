@@ -4,6 +4,9 @@ player_id_set(id)
 
 mask_index = sPlayerMask
 
+attr_hspeed = 3
+attr_jump_time = second(0.06)
+
 // weapons
 wield = "" // item what hold on
 wield_data = []
@@ -16,8 +19,7 @@ ladder_speed = 3
 ladder_delay = 0
 
 jumped = false
-jump_count_max = second(0.06)
-jump_count = jump_count_max
+jump_count = attr_jump_time
 jump_speed = -10
 
 stomp_count_max = 7

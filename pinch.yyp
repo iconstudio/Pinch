@@ -375,14 +375,6 @@
             }
         },
         {
-            "Key": "2dcd7824-fc7d-4c42-85e1-62e1a8a226e0",
-            "Value": {
-                "id": "4dc15924-7cdf-4b39-beb5-c4e8ee39598b",
-                "resourcePath": "rooms\\roomMain\\roomMain.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "2e546509-bf05-4f61-be7b-0fa669ea419f",
             "Value": {
                 "id": "0ac83001-c59c-4006-9f5b-a04271081afd",
@@ -524,14 +516,6 @@
                 "id": "a598ff38-68f1-45c4-a236-379ce2cdc8b6",
                 "resourcePath": "scripts\\view_xborder\\view_xborder.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "43f4a055-8fa8-4966-98da-1a4ceb4e18e0",
-            "Value": {
-                "id": "901ac442-c6ff-4782-a440-02d4a52aa2e7",
-                "resourcePath": "rooms\\roomGame1\\roomGame1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -703,14 +687,6 @@
             }
         },
         {
-            "Key": "59d89bec-e9d2-46ed-ab6f-125d89f1f047",
-            "Value": {
-                "id": "3d707963-4c9b-48f4-86df-bef1a9bcbbf1",
-                "resourcePath": "views\\2dcd7824-fc7d-4c42-85e1-62e1a8a226e0-room.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "5bac3531-bf5b-4713-b4d2-8626c13a37da",
             "Value": {
                 "id": "cd27fe78-92cb-46c6-83ec-1397752c3231",
@@ -732,6 +708,14 @@
                 "id": "c1e29968-8a2c-4bdb-bafc-9a55dbc396a4",
                 "resourcePath": "tilesets\\tilesetShade\\tilesetShade.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "5fe58804-f7bd-420f-8761-a03ce297b454",
+            "Value": {
+                "id": "330e782b-21ac-44bf-8fb4-cefdbf0ea1ef",
+                "resourcePath": "extensions\\GooglePlayServicesExtension\\GooglePlayServicesExtension.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -772,6 +756,14 @@
                 "id": "aef7ff71-d67e-43f8-83d9-62372211fe9b",
                 "resourcePath": "objects\\oGlobal\\oGlobal.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c41165b-d5e1-4b51-9624-7dbe2551985a",
+            "Value": {
+                "id": "0072d1cf-5b8f-41d9-83ca-83df3059f54c",
+                "resourcePath": "views\\c6358b64-9565-4d18-9308-b847c6aef6cc-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -951,14 +943,6 @@
             }
         },
         {
-            "Key": "881fe188-7f7d-41c8-bdad-7f96e38308d8",
-            "Value": {
-                "id": "d4533e92-0ae3-48e5-a068-c09836a62801",
-                "resourcePath": "scripts\\view_width\\view_width.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "8a6a03a0-d98d-457c-8cd2-0e50d89fb200",
             "Value": {
                 "id": "f16523c6-2a1b-4e7b-b9bf-a2dbd3fa8fc1",
@@ -1047,11 +1031,27 @@
             }
         },
         {
+            "Key": "995414f5-062c-4e87-9b6c-cc75bd415365",
+            "Value": {
+                "id": "ea2ba7e9-1195-450f-adde-8e2bd46eedfa",
+                "resourcePath": "objects\\oStaticTile20\\oStaticTile20.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9adf1b80-6a51-4ac7-ab3d-0c2c651c1304",
             "Value": {
                 "id": "2585f842-ec41-444f-b976-fc89d69f14a5",
                 "resourcePath": "scripts\\io_check_pressed_down\\io_check_pressed_down.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9cc50209-7c9b-42ad-95e1-326d6c839017",
+            "Value": {
+                "id": "19e13373-6307-428b-b8df-3a4aa8b7562f",
+                "resourcePath": "rooms\\roomMain\\roomMain.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1287,14 +1287,6 @@
             }
         },
         {
-            "Key": "b7c6c27f-aa1f-4af8-80f1-eeddc1b14dfa",
-            "Value": {
-                "id": "afa6dd39-bfec-47f5-9059-a38ffbccbecc",
-                "resourcePath": "rooms\\roomInit\\roomInit.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "b8b3acf8-e001-44e2-a0eb-f9aa8623fe0f",
             "Value": {
                 "id": "cc05635d-4810-4b66-a435-a0b7fa295880",
@@ -1420,6 +1412,14 @@
                 "id": "92bb414f-be0f-48af-896b-0b69558726f0",
                 "resourcePath": "scripts\\menu_callback_exit\\menu_callback_exit.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c6358b64-9565-4d18-9308-b847c6aef6cc",
+            "Value": {
+                "id": "c285ea8c-a551-4f98-9cf3-98168dd2e611",
+                "resourcePath": "rooms\\roomInit\\roomInit.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1735,14 +1735,6 @@
             }
         },
         {
-            "Key": "ef9a5eae-f7c3-46ee-94ee-bda0e44cdd7f",
-            "Value": {
-                "id": "3b0a8ac3-64a3-4c53-ab0d-21d417368af7",
-                "resourcePath": "scripts\\view_height\\view_height.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f1334b7a-ab8c-417c-93fc-8ffd72ae6eb2",
             "Value": {
                 "id": "26ce48fa-a3e7-4b11-87e2-0f6d5d5fc3de",
@@ -1930,8 +1922,6 @@
         "b5b16ff0-4079-477b-89e5-aa4c3ab4c245",
         "d9bad48d-84ec-4ff2-ba54-364981c15cdd",
         "51c0e244-7777-4695-aaac-1e386a7ae6c5",
-        "881fe188-7f7d-41c8-bdad-7f96e38308d8",
-        "ef9a5eae-f7c3-46ee-94ee-bda0e44cdd7f",
         "42b0d511-af59-472a-a3fc-e39d606af1ec",
         "ddf6c14e-beaf-439d-a79e-0cf861f581ff",
         "af562533-2d9d-49a1-8579-028fd8ed67df",

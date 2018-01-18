@@ -93,15 +93,15 @@ if !laddering and status < status_attack { // while not attacking
 	}
 
 	if !onAir {
-		jump_count = jump_count_max
+		jump_count = attr_jump_time
 		jumped = false
 	}
 
-	if jumped and jump_count < jump_count_max {
+	if jumped and jump_count < attr_jump_time {
 		jump_count++
 		yVel = -8
 	} else {
-		jump_count = jump_count_max
+		jump_count = attr_jump_time
 		jumped = false
 	}
 
@@ -148,7 +148,7 @@ if !laddering and status < status_attack { // while not attacking
 	}
 
 	if jumped and io_check_released_jump() {
-		jump_count = jump_count_max
+		jump_count = attr_jump_time
 		jumped = false
 		yVel /= 2
 	}
