@@ -2,7 +2,7 @@
 
 var sx = view_wport
 var dx = sx - 280 * min(1, rpush * 2)
-var dy = view_hport / 10 + y
+var dy = global.gui_hsize / 10 + y
 var hy = dy + 80
 
 draw_set_alpha(rpush)

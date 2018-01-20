@@ -4,7 +4,7 @@ player_id_set(id)
 
 mask_index = sPlayerMask
 
-attr_hspeed = 3
+attr_hspeed = 2
 attr_jump_time = second(0.06)
 
 // weapons

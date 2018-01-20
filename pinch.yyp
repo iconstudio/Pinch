@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "693a60ee-6f4b-453d-ab7a-4ba6f2bdd75b",
+            "Value": {
+                "id": "33d2c85c-2b5f-42b7-87d7-b7ab24712690",
+                "resourcePath": "rooms\\roomGame1\\roomGame1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "695aebbb-860c-421e-a212-902050656d96",
             "Value": {
                 "id": "3a771bfd-cbe5-496c-b5e1-a888e82bdc79",
@@ -1556,6 +1564,14 @@
                 "id": "2f89e749-e234-45c4-941b-83bbfa8c211b",
                 "resourcePath": "scripts\\physix_fixture_make_static\\physix_fixture_make_static.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dd212aff-9592-4c0b-86a7-9d6f574f71c1",
+            "Value": {
+                "id": "d421f367-1d48-4ce6-9398-f8b17586e0c5",
+                "resourcePath": "sprites\\sBackgroundMain\\sBackgroundMain.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

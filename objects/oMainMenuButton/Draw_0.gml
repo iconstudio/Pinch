@@ -5,7 +5,7 @@ var dalpha = alpha * image_alpha
 
 draw_set_alpha(dalpha)
 draw_set_color($ffffff)
-ui_draw_sprite_panel(sButton, 0, 8, -6, -6, __width + 6, __height + 14)
+ui_draw_sprite_panel(sButton, 0, 8, -6, -6, __width + 12, __height + 14)
 
 draw_set_color(0)
 draw_rectangle(0, 0, __width, __height, false)

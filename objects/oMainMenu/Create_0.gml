@@ -4,7 +4,7 @@ dmode = 0
 ipush = 0
 
 zui_set_anchor(0.5, 0.5)
-zui_set_size(__parent.__width, __parent.__height)
+zui_set_size(global.gui_wsize, global.gui_hsize)
 
 menu_title = ""
 menu_first = menu_node_add()

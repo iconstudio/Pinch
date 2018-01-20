@@ -4,25 +4,28 @@ randomize()
 
 #macro view_width 200
 #macro view_height 100
+#macro block_size 20
 window_set_fullscreen(true)
-//*
-var dw = display_get_width()
-var dh = display_get_height()
 
+var dw = display_get_width(), dh = display_get_height()
 var aspect = dw / view_width
 var vw = dw, vh = view_height * aspect
-//var screenheight = 400 / wscale
-//var screeny = abs(screenheight - dh) / 2
 
+var caspect = floor(dw / block_size) - 1
+var cw = caspect * block_size
+var ch = view_height * caspect
+var vpx = (dw - cw) / 2
 for (var i = room_first; room_exists(i); i = room_next(i)) {
 	room_set_view_enabled(i, true)
-	room_set_viewport(i, 0, true, 0, 0, vw, vh)
+	room_set_viewport(i, 0, true, vpx, 0, cw, ch)
 }
 
-display_set_gui_size(vw, vh)
+display_set_gui_size(dw, vh)
 window_set_size(dw, dh)
-//*/
 
+global.gui_wsize = display_get_gui_width()
+global.gui_hsize = display_get_gui_height()
+//*/
 
 global.Gamepad = -1
 global.GamepadType = 0

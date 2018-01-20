@@ -11,10 +11,9 @@ if argument_count > 2 and argument[2] {
 }
 
 var nsz = ds_list_size(button_list)
-var zw = zui_get_width()
-var button_id = zui_create(zw * 0.5, cy, oMainMenuButton)
+var button_id = zui_create(0, cy, oMainMenuButton)
 with (button_id) {
-	zui_set_size(zw, 45)
+	zui_set_size(other.__width, 45)
 	caption = argument[0]
 	callback = argument[1]
 	

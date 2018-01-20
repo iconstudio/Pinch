@@ -4,7 +4,7 @@ if status >= status_stun {
 	event_inherited()
 	exit	
 } else {
-	xVelLimit = 3
+	xVelLimit = attr_hspeed
 }
 
 var mx = io_check_right() - io_check_left()
