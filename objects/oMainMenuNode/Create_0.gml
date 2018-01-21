@@ -2,7 +2,7 @@
 
 zui_set_visible(false)
 zui_set_anchor(0, 0)
-zui_set_size(global.gui_wsize * 0.4, global.gui_hsize * 0.8)
+zui_set_size(global.main_node_wsize, global.main_node_hsize)
 
 image_blend = 0
 

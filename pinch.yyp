@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "20d81fa4-8771-4ce1-8073-02fa9eb176cd",
+            "Value": {
+                "id": "c1e91f74-6138-4c21-a4b0-6aeadb984b7b",
+                "resourcePath": "scripts\\game_vars_clear\\game_vars_clear.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2280ea83-c456-4226-aba2-0f4a6bfd36a6",
             "Value": {
                 "id": "ba6224a9-04bc-41af-8ff8-ff2bb208fe7b",
@@ -711,14 +719,6 @@
             }
         },
         {
-            "Key": "5fe58804-f7bd-420f-8761-a03ce297b454",
-            "Value": {
-                "id": "330e782b-21ac-44bf-8fb4-cefdbf0ea1ef",
-                "resourcePath": "extensions\\GooglePlayServicesExtension\\GooglePlayServicesExtension.yy",
-                "resourceType": "GMExtension"
-            }
-        },
-        {
             "Key": "605f8b76-63da-4c6a-9137-3cc98d38683e",
             "Value": {
                 "id": "d09248ff-4baa-4753-ba9c-927725ecb1e4",
@@ -868,6 +868,14 @@
                 "id": "f1af62ca-d646-4968-829a-2525b3515299",
                 "resourcePath": "scripts\\io_check_down\\io_check_down.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "79885b8c-c0a7-4cc8-b07b-6ea2d1b9db73",
+            "Value": {
+                "id": "99f5bea8-cad8-41d2-9bff-d280506885af",
+                "resourcePath": "extensions\\ZUI_engine_pink\\ZUI_engine_pink.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -1387,6 +1395,14 @@
             "Value": {
                 "id": "a90a49f8-fbb3-4f38-93d1-75c8d531bb87",
                 "resourcePath": "scripts\\zui_x_child_compare\\zui_x_child_compare.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c0c1ab03-1be7-4fef-909c-526ba46228f8",
+            "Value": {
+                "id": "b53aec62-5596-48f0-a858-17b6b16730a2",
+                "resourcePath": "scripts\\player_skill_add\\player_skill_add.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1991,7 +2007,9 @@
         "747862b6-9b42-439b-9af3-bff6c2607ebe",
         "9e711601-82a9-4818-bf4f-d6d7fca09a39",
         "cd13ace5-c7fd-45fc-bd9c-d6e4a18ebd37",
-        "01775149-e5c0-450d-896a-3e7faa26cb47"
+        "c0c1ab03-1be7-4fef-909c-526ba46228f8",
+        "01775149-e5c0-450d-896a-3e7faa26cb47",
+        "20d81fa4-8771-4ce1-8073-02fa9eb176cd"
     ],
     "tutorial": ""
 }

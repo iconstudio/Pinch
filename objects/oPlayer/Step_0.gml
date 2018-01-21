@@ -89,7 +89,7 @@ if !laddering {
 
 if !laddering and status < status_attack { // while not attacking
 	if mx != 0 and !shielding {
-		xVel += mx
+		xVel += mx * 0.4
 	}
 
 	if !onAir {
@@ -99,7 +99,7 @@ if !laddering and status < status_attack { // while not attacking
 
 	if jumped and jump_count < attr_jump_time {
 		jump_count++
-		yVel = -8
+		yVel = attr_jump_speed
 	} else {
 		jump_count = attr_jump_time
 		jumped = false
@@ -114,7 +114,7 @@ if !laddering and status < status_attack { // while not attacking
 			if cond1 or cond2 { // do Stomping
 				//if stomp_count > 0 { // double pressed
 				//	stomp_count = 0
-					yVel = max(yVel, yVelMax)
+					yVel = max(yVel, attr_stomp_speed)
 				//} else {
 				//	stomp_count = stomp_count_max
 				//}

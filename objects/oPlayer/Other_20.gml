@@ -1,6 +1,6 @@
 /// @description Jump
 
-yVel = jump_speed
+yVel = attr_jump_speed
 jump_count = 0
 jumped = true
 

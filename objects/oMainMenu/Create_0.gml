@@ -3,6 +3,13 @@
 dmode = 0
 ipush = 0
 
+global.main_wsize = global.gui_wsize
+global.main_hsize = global.gui_hsize
+global.main_node_x = global.gui_wsize * 0.55
+global.main_node_y = global.gui_hsize * 0.1
+global.main_node_wsize = global.gui_wsize * 0.4
+global.main_node_hsize = global.gui_hsize * 0.8
+
 zui_set_anchor(0.5, 0.5)
 zui_set_size(global.gui_wsize, global.gui_hsize)
 
