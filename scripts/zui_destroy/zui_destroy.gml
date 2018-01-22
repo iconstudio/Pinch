@@ -6,8 +6,11 @@ for (var i = __childs - 1; i >= 0; --i) {
  }
 }
 
-with (__parent) {
- zui_remove_child(other.id);
+if (!__dead) {
+	with (__parent) {
+		zui_remove_child(other.id);
+	}
+	
+	instance_destroy();
+	__dead = true;
 }
-
-instance_destroy();

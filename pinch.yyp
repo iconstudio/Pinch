@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "9af434a2-d5e8-4e75-ab12-47d84f1e9859",
+            "Value": {
+                "id": "2f7ddb9a-34e9-4930-901b-83b194e79650",
+                "resourcePath": "sprites\\sCircularGauge\\sCircularGauge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9cc50209-7c9b-42ad-95e1-326d6c839017",
             "Value": {
                 "id": "19e13373-6307-428b-b8df-3a4aa8b7562f",

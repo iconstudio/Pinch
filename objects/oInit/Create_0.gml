@@ -2,14 +2,24 @@
 
 randomize()
 
-#macro view_width 200
-#macro view_height 100
+#macro view_width 480
+#macro view_height 240
 #macro block_size 20
-window_set_fullscreen(true)
+#macro screen_width 960
+#macro screen_height 720
 
+var aspect = 1 / 2
+window_set_size(screen_width, screen_height)
+display_set_gui_size(screen_width, screen_width * aspect)
+
+/*
+window_set_fullscreen(true)
 var dw = display_get_width(), dh = display_get_height()
-var aspect = dw / view_width
-var vw = dw, vh = view_height * aspect
+var scale = dw / view_width + 1
+
+var gw = view_width, gh = view_height * scale
+
+var vw = dw, vh = view_height * scale
 
 var caspect = floor(dw / block_size) - 1
 var cw = caspect * block_size
@@ -20,9 +30,9 @@ for (var i = room_first; room_exists(i); i = room_next(i)) {
 	room_set_viewport(i, 0, true, vpx, 0, cw, ch)
 }
 
-display_set_gui_size(dw, vh)
+display_set_gui_size(gw, gh)
 window_set_size(dw, dh)
-
+*/
 global.gui_wsize = display_get_gui_width()
 global.gui_hsize = display_get_gui_height()
 //*/
