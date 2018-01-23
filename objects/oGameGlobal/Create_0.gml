@@ -7,11 +7,10 @@ global.inventory_opened = false
 
 // clear
 global.paused = false
-global.my_player = noone
 
 // for drawing a player skill hud, a linear inventory
 idx = __width * 0.5
-idy = ceil(__height / 20 + 1) * 20
+idy = ceil(__height / 20 + 2) * 20
 
 invdw = 40
 invdgw = invdw + 8

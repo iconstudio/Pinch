@@ -12,7 +12,9 @@
         "cd13ace5-c7fd-45fc-bd9c-d6e4a18ebd37",
         "c0c1ab03-1be7-4fef-909c-526ba46228f8",
         "01775149-e5c0-450d-896a-3e7faa26cb47",
-        "20d81fa4-8771-4ce1-8073-02fa9eb176cd"
+        "20d81fa4-8771-4ce1-8073-02fa9eb176cd",
+        "e6ce6e0d-9c92-45a5-993c-8117539d0356",
+        "269b7bb8-a74a-45c1-9109-acb3917d8aa1"
     ],
     "filterType": "GMScript",
     "folderName": "Game Logics",

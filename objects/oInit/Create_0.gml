@@ -6,11 +6,18 @@ randomize()
 #macro view_height 240
 #macro block_size 20
 #macro screen_width 960
-#macro screen_height 720
+#macro screen_height 800
 
 var aspect = 1 / 2
 window_set_size(screen_width, screen_height)
 display_set_gui_size(screen_width, screen_width * aspect)
+
+var _cam
+for (var i = room_first; room_exists(i); i = room_next(i)) {
+	room_set_view_enabled(i, true)
+	_cam = room_get_camera(i, 0)
+	camera_set_view_target(_cam, oPlayer)
+}
 
 /*
 window_set_fullscreen(true)

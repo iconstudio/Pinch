@@ -1,6 +1,7 @@
 /// @description Update
 
 if status >= status_stun {
+	sprite_index = sprite_tag_get("idle")
 	event_inherited()
 	exit	
 } else {
@@ -89,7 +90,10 @@ if !laddering {
 
 if !laddering and status < status_attack { // while not attacking
 	if mx != 0 and !shielding {
-		xVel += mx * 0.4
+		if onAir
+			xVel += mx * 0.4
+		else
+			xVel += mx * 0.6
 	}
 
 	if !onAir {
@@ -152,7 +156,8 @@ if !laddering and status < status_attack { // while not attacking
 		jumped = false
 		yVel /= 2
 	}
-} else {
+} else { // on ladder
+	sprite_index = sprite_tag_get("idle")
 	yGravity = 0
 	xVel = 0
 	yVel = 0
@@ -179,9 +184,11 @@ else
 	ladder_delay = 0
 
 if onAir and !laddering {
-	sprite_index = sPlayerJump
+	sprite_index = sprite_tag_get("jump")
+} else if mx == 0 {
+	sprite_index = sprite_tag_get("idle")
 } else {
-	sprite_index = sPlayer
+	sprite_index = sprite_tag_get("walk")
 }
 
 event_inherited()

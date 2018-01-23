@@ -31,3 +31,8 @@ shield_count_max = second(5)
 shield_count = 0
 
 event_inherited()
+
+sprite_tag_assign("idle", sPlayerIdle)
+sprite_tag_assign("walk", sPlayerRun)
+sprite_tag_assign("jump", sPlayerJump)
+sprite_tag_assign("aim", sPlayerAim)
