@@ -8,6 +8,7 @@ randomize()
 #macro screen_width 960
 #macro screen_height 800
 
+steam_initialised()
 var aspect = 1 / 2
 window_set_size(screen_width, screen_height)
 display_set_gui_size(screen_width, screen_width * aspect)
@@ -15,8 +16,11 @@ display_set_gui_size(screen_width, screen_width * aspect)
 var _cam
 for (var i = room_first; room_exists(i); i = room_next(i)) {
 	room_set_view_enabled(i, true)
+	room_set_viewport(i, 0, true, 0, 0, view_width * 2, view_height * 2)
+	
 	_cam = room_get_camera(i, 0)
 	camera_set_view_target(_cam, oPlayer)
+	camera_set_view_size(_cam, view_width, view_height)
 }
 
 /*

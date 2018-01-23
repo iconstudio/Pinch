@@ -20,7 +20,6 @@ with (newid) {
  visible = false
 }
 
-
 zui_add_child(newid)
 
 return newid

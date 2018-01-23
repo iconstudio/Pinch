@@ -19,7 +19,7 @@
     "option_android_google_cloud_saving": false,
     "option_android_google_enable_licensing": false,
     "option_android_google_licensing_public_key": "",
-    "option_android_google_services": true,
+    "option_android_google_services": false,
     "option_android_google_services_app_id": "",
     "option_android_icon_hdpi": "${base_options_dir}\\android\\icons\\hdpi.png",
     "option_android_icon_ldpi": "${base_options_dir}\\android\\icons\\ldpi.png",

@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "2ff29790-1dde-4d79-9024-64418dfb066b",
+            "Value": {
+                "id": "8785f52e-0c0e-4590-a77d-c1a1493c10ca",
+                "resourcePath": "scripts\\ease_out_expo\\ease_out_expo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "31b75354-cede-4e57-872d-c3b8eadb16ee",
             "Value": {
                 "id": "2730e95c-98dc-4737-a9c3-e62ec27d5c25",
@@ -2057,6 +2065,7 @@
         "e8d7bf9b-b1c6-45f7-81da-cfe5ca725c27",
         "5948aa1e-fbed-4987-a614-274fb4c1fc6f",
         "a4c60548-e6ce-4a69-a06d-bac19c587919",
+        "2ff29790-1dde-4d79-9024-64418dfb066b",
         "d0a92550-e0bd-424b-88a9-720c87294374",
         "10b91e99-907d-451b-85a7-d01bca43c66c",
         "b9970846-3a22-4d64-8cb8-351360b8e826",

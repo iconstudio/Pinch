@@ -3,6 +3,8 @@
 draw_set_alpha(1)
 draw_set_color($ffffff)
 
+idy = sdy + pause_push * 4000
+
 for (var i = 0; i < 4; ++i) {
 	var __idx = invdx + i * invdgw
 	draw_sprite(sInventory, 0, __idx, idy)
@@ -29,4 +31,20 @@ if hv != 0 and mv != 0 {
 	draw_set_halign(1)
 	draw_set_valign(1)
 	draw_text(gdx, gdy + 60, string(hv) + " / " + string(mv))
+}
+
+draw_set_font(fontLarge)
+draw_set_halign(0)
+var svstr = string(round(global.vscore))
+var svlen = string_length(svstr)
+if svlen > 0 {
+	var svchr = ""
+	var svtdx = svdx, svtdy
+	for (var i = 1; i <= svlen; ++i) {
+		svtdy = svdy + lengthdir_y(svwave * 4, srot + i * 60)
+
+		svchr = string_char_at(svstr, i)
+		draw_text(svtdx, svtdy, svchr)
+		svtdx += 20
+	}
 }
