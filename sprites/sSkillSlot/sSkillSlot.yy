@@ -2,7 +2,7 @@
     "id": "2ed3973e-b824-40ea-a4cb-7c6abfd65042",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sInventory",
+    "name": "sSkillSlot",
     "For3D": false,
     "HTile": false,
     "VTile": false,

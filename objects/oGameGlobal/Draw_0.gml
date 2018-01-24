@@ -7,7 +7,7 @@ idy = sdy + pause_push * 4000
 
 for (var i = 0; i < 4; ++i) {
 	var __idx = invdx + i * invdgw
-	draw_sprite(sInventory, 0, __idx, idy)
+	draw_sprite(sSkillSlot, 0, __idx, idy)
 	draw_rectangle(__idx, idy, __idx + invdw, invddy, true)
 }
 
@@ -40,11 +40,13 @@ var svlen = string_length(svstr)
 if svlen > 0 {
 	var svchr = ""
 	var svtdx = svdx, svtdy
+	var svscl = 1
 	for (var i = 1; i <= svlen; ++i) {
-		svtdy = svdy + lengthdir_y(svwave * 4, srot + i * 60)
+		//svtdy = svdy + lengthdir_y(svwave, srot + i * 60)
+		//svscl = max(0.8, min(1 + lengthdir_x(svwave, srot + i * 67), 1.5))
 
 		svchr = string_char_at(svstr, i)
-		draw_text(svtdx, svtdy, svchr)
+		draw_text_transformed(svtdx, svdy, svchr, 1, svscl, 0)
 		svtdx += 20
 	}
 }

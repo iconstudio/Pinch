@@ -2,8 +2,6 @@
 
 player_id_set(id)
 
-mask_index = sPlayerMask
-
 attr_hspeed = 2
 attr_jump_time = 2
 attr_jump_speed = -6

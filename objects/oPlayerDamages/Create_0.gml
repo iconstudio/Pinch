@@ -1,3 +1,3 @@
 /// @description Initialization
 
-image_speed = 0.7
+death = 0

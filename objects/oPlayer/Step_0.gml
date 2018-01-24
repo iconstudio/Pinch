@@ -185,9 +185,9 @@ else
 
 if onAir and !laddering {
 	sprite_index = sprite_tag_get("jump")
-} else if mx == 0 {
+} else if mx == 0 or shielding {
 	sprite_index = sprite_tag_get("idle")
-} else {
+} else if xVel != 0 {
 	sprite_index = sprite_tag_get("walk")
 }
 

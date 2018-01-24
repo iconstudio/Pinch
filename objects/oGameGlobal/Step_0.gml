@@ -1,14 +1,11 @@
 /// @description Update
 
 
-
+var ascore = 0
 if global.dscore != global.vscore {
-	var ascore = (global.dscore - global.vscore)
-	global.vscore += ascore/ 5
-
-	svwave -= min(svwave + max(0, svwave) / 10, 7) / 7
-} else {
-	svwave -= svwave / 4
+	ascore = (global.dscore - global.vscore)
+	global.vscore += ascore / 5
 }
 
+//svwave -= min(svwave + max(0, ascore) / 10, 8) / 8
 srot = (srot + 6) mod 360

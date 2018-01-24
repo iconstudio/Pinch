@@ -402,7 +402,7 @@
             "Key": "2ed3973e-b824-40ea-a4cb-7c6abfd65042",
             "Value": {
                 "id": "a0dd8f5f-96be-43bc-9eb1-055f8824ba9f",
-                "resourcePath": "sprites\\sInventory\\sInventory.yy",
+                "resourcePath": "sprites\\sSkillSlot\\sSkillSlot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -676,6 +676,22 @@
                 "id": "0f94dfad-0257-4edd-b32e-a484e733d525",
                 "resourcePath": "scripts\\view_y\\view_y.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "53654dda-5749-4856-9fd5-c70a4ab69eff",
+            "Value": {
+                "id": "91ae42ba-f16e-4f20-b7d8-edf7855558a7",
+                "resourcePath": "objects\\oRaptor\\oRaptor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "53edc915-19f9-4648-a160-44c723c6c9bd",
+            "Value": {
+                "id": "80b62b83-332b-4e04-b312-43611f354a92",
+                "resourcePath": "objects\\oPlayerDamages\\oPlayerDamages.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1051,6 +1067,14 @@
             "Value": {
                 "id": "94435b42-90fe-4643-b6e8-3fe13bcf9b9e",
                 "resourcePath": "sprites\\sItemHoof\\sItemHoof.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9642e02b-26c4-418e-9f4f-733957f03a1a",
+            "Value": {
+                "id": "129d7e18-fce6-4888-aa41-1b59dc8286eb",
+                "resourcePath": "sprites\\sRaptor\\sRaptor.yy",
                 "resourceType": "GMSprite"
             }
         },
