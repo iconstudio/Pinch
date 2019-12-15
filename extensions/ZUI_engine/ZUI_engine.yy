@@ -1,7 +1,7 @@
 {
     "id": "403e1440-1d5c-4d50-8be2-d67c22b91af8",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "ZUI_engine",
     "IncludedResources": [
         "Sprites\\sprWindowPanel",
@@ -78,6 +78,7 @@
     "copyToTargets": -1,
     "date": "2017-46-31 02:12:57",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -92,13 +93,29 @@
     "iosThirdPartyFrameworkEntries": [
         
     ],
+    "iosdelegatename": null,
     "iosplistinject": "",
     "license": "Free to use, also for commercial games.",
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.pocha.zui",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "supportedTargets": -1,
+    "tvosProps": false,
+    "tvosSystemFrameworkEntries": [
+        
+    ],
+    "tvosThirdPartyFrameworkEntries": [
+        
+    ],
+    "tvosclassname": null,
+    "tvosdelegatename": null,
+    "tvosmaccompilerflags": null,
+    "tvosmaclinkerflags": null,
+    "tvosplistinject": null,
     "version": "1.0.1"
 }
